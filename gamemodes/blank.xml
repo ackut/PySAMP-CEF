@@ -1,0 +1,3630 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="file:///C|/Users/ASKIT/Desktop/PySAMP-Deathmatch/qawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\ASKIT\Desktop\PySAMP-Deathmatch\gamemodes\blank.pwn">
+	<assembly>
+		<name>blank.pwn</name>
+	</assembly>
+
+	<!-- general -->
+	<general>
+		<library name="open.mp" summary="open.mp includes entry point.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="args" summary="Script arguments support functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="console" summary="Console output.">  <license>  (c) Copyright 1998-2011, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="core" summary="Core functions.">  <license>  (c) Copyright 1998-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="file" summary="File input/output functions.">  <license>  (c) Copyright 2004-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="time" summary="Float arithmetic.">  <license>  (c) Copyright 1999, Artran, Inc.  Written by Greg Garner (gmg@artran.com)  Modified in March 2001 to include user defined  operators for the floating point functions.  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="string" summary="String functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="time" summary="Date/time functions.">  <license>  (c) Copyright 2001-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_core" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_variable" summary="open.mp player functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_actor" summary="open.mp actor functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_checkpoint" summary="open.mp checkpoint functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_class" summary="open.mp class functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_database" summary="open.mp SQLite functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_dialog" summary="open.mp dialog functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_gangzone" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_http" summary="open.mp legacy HTTP include.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p /><p/> <p/><p/> <library name="omp_menu" summary="open.mp menu functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_network" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_object" summary="open.mp object functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_pickup" summary="open.mp pickup functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_textdraw" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_variable" summary="open.mp global data functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_vehicle" summary="open.mp vehicle functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_textlabel" summary="open.mp 3D text label functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/>
+	</general>
+
+	<members>
+
+		<!-- enumerations -->
+		<member name="T:__BULLET_HIT_TYPE" value="5">
+			<tagname value="t_BULLET_HIT_TYPE"/>
+			<member name="C:BULLET_HIT_TYPE_NONE" value="0">
+			</member>
+			<member name="C:BULLET_HIT_TYPE_PLAYER" value="1">
+			</member>
+			<member name="C:BULLET_HIT_TYPE_VEHICLE" value="2">
+			</member>
+			<member name="C:BULLET_HIT_TYPE_OBJECT" value="3">
+			</member>
+			<member name="C:BULLET_HIT_TYPE_PLAYER_OBJECT" value="4">
+			</member>
+			<referrer name="_@BULLET_HIT_TYPE"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__CAM_MODE" value="57">
+			<tagname value="t_CAM_MODE"/>
+			<member name="C:CAM_MODE_DISCONNECTED" value="-1">
+			</member>
+			<member name="C:CAM_MODE_NONE" value="0">
+			</member>
+			<member name="C:CAM_MODE_BEHINDCAR" value="3">
+			</member>
+			<member name="C:CAM_MODE_FOLLOWPED" value="4">
+			</member>
+			<member name="C:CAM_MODE_SNIPER" value="7">
+			</member>
+			<member name="C:CAM_MODE_ROCKETLAUNCHER" value="8">
+			</member>
+			<member name="C:CAM_MODE_FIXED" value="15">
+			</member>
+			<member name="C:CAM_MODE_1STPERSON" value="16">
+			</member>
+			<member name="C:CAM_MODE_CAM_ON_A_STRING" value="18">
+			</member>
+			<member name="C:CAM_MODE_BEHINDBOAT" value="22">
+			</member>
+			<member name="C:CAM_MODE_CAMERA" value="46">
+			</member>
+			<member name="C:CAM_MODE_ROCKETLAUNCHER_HS" value="51">
+			</member>
+			<member name="C:CAM_MODE_AIMWEAPON" value="53">
+			</member>
+			<member name="C:CAM_MODE_AIMWEAPON_FROMCAR" value="55">
+			</member>
+			<member name="C:CAM_MODE_DW_HELI_CHASE" value="56">
+			</member>
+			<referrer name="_@CAM_MODE"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__CARMODTYPE" value="16">
+			<tagname value="t_CARMODTYPE"/>
+			<member name="C:CARMODTYPE_NONE" value="-1">
+			</member>
+			<member name="C:CARMODTYPE_SPOILER" value="0">
+			</member>
+			<member name="C:CARMODTYPE_HOOD" value="1">
+			</member>
+			<member name="C:CARMODTYPE_ROOF" value="2">
+			</member>
+			<member name="C:CARMODTYPE_SIDESKIRT" value="3">
+			</member>
+			<member name="C:CARMODTYPE_LAMPS" value="4">
+			</member>
+			<member name="C:CARMODTYPE_NITRO" value="5">
+			</member>
+			<member name="C:CARMODTYPE_EXHAUST" value="6">
+			</member>
+			<member name="C:CARMODTYPE_WHEELS" value="7">
+			</member>
+			<member name="C:CARMODTYPE_STEREO" value="8">
+			</member>
+			<member name="C:CARMODTYPE_HYDRAULICS" value="9">
+			</member>
+			<member name="C:CARMODTYPE_FRONT_BUMPER" value="10">
+			</member>
+			<member name="C:CARMODTYPE_REAR_BUMPER" value="11">
+			</member>
+			<member name="C:CARMODTYPE_VENT_RIGHT" value="12">
+			</member>
+			<member name="C:CARMODTYPE_VENT_LEFT" value="13">
+			</member>
+			<member name="C:CARMODTYPE_FRONT_BULLBAR" value="14">
+			</member>
+			<member name="C:CARMODTYPE_REAR_BULLBAR" value="15">
+			</member>
+			<referrer name="_@CARMODTYPE"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__CLICK_SOURCE" value="1">
+			<tagname value="t_CLICK_SOURCE"/>
+			<member name="C:CLICK_SOURCE_SCOREBOARD" value="0">
+			</member>
+			<referrer name="_@CLICK_SOURCE"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__CONNSTAT" value="9">
+			<tagname value="t_CONNECTION_STATUS"/>
+			<member name="C:CONNECTION_STATUS_NO_ACTION" value="0">
+			</member>
+			<member name="C:CONNECTION_STATUS_DISCONNECT_ASAP" value="1">
+			</member>
+			<member name="C:CONNECTION_STATUS_DISCONNECT_ASAP_SILENTLY" value="2">
+			</member>
+			<member name="C:CONNECTION_STATUS_DISCONNECT_ON_NO_ACK" value="3">
+			</member>
+			<member name="C:CONNECTION_STATUS_REQUESTED_CONNECTION" value="4">
+			</member>
+			<member name="C:CONNECTION_STATUS_HANDLING_CONNECTION_REQUEST" value="5">
+			</member>
+			<member name="C:CONNECTION_STATUS_UNVERIFIED_SENDER" value="6">
+			</member>
+			<member name="C:CONNECTION_STATUS_SET_ENCRYPTION_ON_MULTIPLE_16_BYTE_PACKET" value="7">
+			</member>
+			<member name="C:CONNECTION_STATUS_CONNECTED" value="8">
+			</member>
+			<member name="C:CONNSTAT_NO_ACTION" value="0">
+			</member>
+			<member name="C:CONNSTAT_DISCONNECT_ASAP" value="1">
+			</member>
+			<member name="C:CONNSTAT_DISCONNECT_ASAP_SILNT" value="2">
+			</member>
+			<member name="C:CONNSTAT_DISCONNECT_ON_NO_ACK" value="3">
+			</member>
+			<member name="C:CONNSTAT_REQUESTED_CONNECTION" value="4">
+			</member>
+			<member name="C:CONNSTAT_HANDLING_CONN_REQ" value="5">
+			</member>
+			<member name="C:CONNSTAT_UNVERIFIED_SENDER" value="6">
+			</member>
+			<member name="C:CONNSTAT_SET_ENCRYPTION" value="7">
+			</member>
+			<member name="C:CONNSTAT_CONNECTED" value="8">
+			</member>
+			<referrer name="_@CONNECTION_STATUS"/>
+			<library>omp_network</library>  <summary>Connection statuses</summary> 
+		</member>
+		<member name="T:__CP_TYPE" value="9">
+			<tagname value="t_CP_TYPE"/>
+			<member name="C:CP_TYPE_GROUND_NORMAL" value="0">
+			</member>
+			<member name="C:CP_TYPE_GROUND_FINISH" value="1">
+			</member>
+			<member name="C:CP_TYPE_GROUND_EMPTY" value="2">
+			</member>
+			<member name="C:CP_TYPE_AIR_NORMAL" value="3">
+			</member>
+			<member name="C:CP_TYPE_AIR_FINISH" value="4">
+			</member>
+			<member name="C:CP_TYPE_AIR_ROTATING" value="5">
+			</member>
+			<member name="C:CP_TYPE_AIR_STROBING" value="6">
+			</member>
+			<member name="C:CP_TYPE_AIR_SWINGING" value="7">
+			</member>
+			<member name="C:CP_TYPE_AIR_BOBBING" value="8">
+			</member>
+			<referrer name="_@CP_TYPE"/>
+			<library>omp_checkpoint</library> 
+		</member>
+		<member name="T:__DIALOG_STYLE" value="6">
+			<tagname value="t_DIALOG_STYLE"/>
+			<member name="C:DIALOG_STYLE_MSGBOX" value="0">
+			</member>
+			<member name="C:DIALOG_STYLE_INPUT" value="1">
+			</member>
+			<member name="C:DIALOG_STYLE_LIST" value="2">
+			</member>
+			<member name="C:DIALOG_STYLE_PASSWORD" value="3">
+			</member>
+			<member name="C:DIALOG_STYLE_TABLIST" value="4">
+			</member>
+			<member name="C:DIALOG_STYLE_TABLIST_HEADERS" value="5">
+			</member>
+			<referrer name="_@DIALOG_STYLE"/>
+			<library>omp_dialog</library>  <summary>Player GUI dialog</summary> 
+		</member>
+		<member name="T:__DOWNLOAD_REQUEST" value="3">
+			<tagname value="t_DOWNLOAD_REQUEST"/>
+			<member name="C:DOWNLOAD_REQUEST_EMPTY" value="0">
+			</member>
+			<member name="C:DOWNLOAD_REQUEST_MODEL_FILE" value="1">
+			</member>
+			<member name="C:DOWNLOAD_REQUEST_TEXTURE_FILE" value="2">
+			</member>
+			<referrer name="_@DOWNLOAD_REQUEST"/>
+			<library>omp_network</library>  <summary>Artwork/NetModels</summary> 
+		</member>
+		<member name="T:__EDIT_RESPONSE" value="3">
+			<tagname value="t_EDIT_RESPONSE"/>
+			<member name="C:EDIT_RESPONSE_CANCEL" value="0">
+			</member>
+			<member name="C:EDIT_RESPONSE_FINAL" value="1">
+			</member>
+			<member name="C:EDIT_RESPONSE_UPDATE" value="2">
+			</member>
+			<referrer name="_@EDIT_RESPONSE"/>
+			<library>omp_object</library> 
+		</member>
+		<member name="T:__FIGHT_STYLE" value="17">
+			<tagname value="t_FIGHT_STYLE"/>
+			<member name="C:FIGHT_STYLE_NORMAL" value="4">
+			</member>
+			<member name="C:FIGHT_STYLE_BOXING" value="5">
+			</member>
+			<member name="C:FIGHT_STYLE_KUNGFU" value="6">
+			</member>
+			<member name="C:FIGHT_STYLE_KNEEHEAD" value="7">
+			</member>
+			<member name="C:FIGHT_STYLE_GRABKICK" value="15">
+			</member>
+			<member name="C:FIGHT_STYLE_ELBOW" value="16">
+			</member>
+			<referrer name="_@FIGHT_STYLE"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__FORCE_SYNC" value="3">
+			<tagname value="t_FORCE_SYNC"/>
+			<member name="C:SYNC_NONE" value="0">
+			</member>
+			<member name="C:SYNC_ALL" value="1">
+			</member>
+			<member name="C:SYNC_OTHER" value="2">
+			</member>
+			<referrer name="_@FORCE_SYNC"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__HTTP_ERROR" value="7">
+			<tagname value="t_HTTP_ERROR"/>
+			<member name="C:HTTP_ERROR_BAD_HOST" value="1">
+			</member>
+			<member name="C:HTTP_ERROR_NO_SOCKET" value="2">
+			</member>
+			<member name="C:HTTP_ERROR_CANT_CONNECT" value="3">
+			</member>
+			<member name="C:HTTP_ERROR_CANT_WRITE" value="4">
+			</member>
+			<member name="C:HTTP_ERROR_CONTENT_TOO_BIG" value="5">
+			</member>
+			<member name="C:HTTP_ERROR_MALFORMED_RESPONSE" value="6">
+			</member>
+			<referrer name="_@HTTP_ERROR"/>
+			<library>omp_http</library>  <summary>HTTP error response codes</summary>  <remarks>  These codes compliment ordinary HTTP response codes returned in 'responseCode'  (10x) (20x OK) (30x Moved) (40x Unauthorised) (50x Server Error)  </remarks> 
+		</member>
+		<member name="T:__HTTP_METHOD" value="4">
+			<tagname value="t_HTTP_METHOD"/>
+			<member name="C:HTTP_GET" value="1">
+			</member>
+			<member name="C:HTTP_POST" value="2">
+			</member>
+			<member name="C:HTTP_HEAD" value="3">
+			</member>
+			<referrer name="_@HTTP_METHOD"/>
+			<library>omp_http</library>  <summary>HTTP request types</summary> 
+		</member>
+		<member name="T:__KEY" value="256">
+			<tagname value="t_KEY"/>
+			<member name="C:KEY_ACTION" value="1">
+			</member>
+			<member name="C:KEY_CROUCH" value="2">
+			</member>
+			<member name="C:KEY_FIRE" value="4">
+			</member>
+			<member name="C:KEY_SPRINT" value="8">
+			</member>
+			<member name="C:KEY_SECONDARY_ATTACK" value="16">
+			</member>
+			<member name="C:KEY_JUMP" value="32">
+			</member>
+			<member name="C:KEY_LOOK_RIGHT" value="64">
+			</member>
+			<member name="C:KEY_HANDBRAKE" value="128">
+			</member>
+			<member name="C:KEY_LOOK_LEFT" value="256">
+			</member>
+			<member name="C:KEY_SUBMISSION" value="512">
+			</member>
+			<member name="C:KEY_LOOK_BEHIND" value="512">
+			</member>
+			<member name="C:KEY_WALK" value="1024">
+			</member>
+			<member name="C:KEY_ANALOG_UP" value="2048">
+			</member>
+			<member name="C:KEY_ANALOG_DOWN" value="4096">
+			</member>
+			<member name="C:KEY_ANALOG_LEFT" value="8192">
+			</member>
+			<member name="C:KEY_ANALOG_RIGHT" value="16384">
+			</member>
+			<member name="C:KEY_YES" value="65536">
+			</member>
+			<member name="C:KEY_NO" value="131072">
+			</member>
+			<member name="C:KEY_CTRL_BACK" value="262144">
+			</member>
+			<member name="C:KEY_UP" value="-128">
+			</member>
+			<member name="C:KEY_DOWN" value="128">
+			</member>
+			<member name="C:KEY_LEFT" value="-128">
+			</member>
+			<member name="C:KEY_RIGHT" value="128">
+			</member>
+			<referrer name="_@KEY"/>
+			<library>omp_player</library>  <summary>Keys</summary> 
+		</member>
+		<member name="T:__MAPICON" value="4">
+			<tagname value="t_MAPICON"/>
+			<member name="C:MAPICON_LOCAL" value="0">
+			</member>
+			<member name="C:MAPICON_GLOBAL" value="1">
+			</member>
+			<member name="C:MAPICON_LOCAL_CHECKPOINT" value="2">
+			</member>
+			<member name="C:MAPICON_GLOBAL_CHECKPOINT" value="3">
+			</member>
+			<referrer name="_@MAPICON"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__OBJECT_MATERIAL_SIZE" value="150">
+			<tagname value="t_OBJECT_MATERIAL_SIZE"/>
+			<member name="C:OBJECT_MATERIAL_SIZE_32x32" value="10">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_64x32" value="20">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_64x64" value="30">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_128x32" value="40">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_128x64" value="50">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_128x128" value="60">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_256x32" value="70">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_256x64" value="80">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_256x128" value="90">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_256x256" value="100">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_512x64" value="110">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_512x128" value="120">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_512x256" value="130">
+				<size value="10"/>
+			</member>
+			<member name="C:OBJECT_MATERIAL_SIZE_512x512" value="140">
+				<size value="10"/>
+			</member>
+			<referrer name="_@OBJECT_MATERIAL_SIZE"/>
+			<library>omp_object</library> 
+		</member>
+		<member name="T:__OBJECT_MATERIAL_TEXT_ALIGN" value="3">
+			<tagname value="t_OBJECT_MATERIAL_TEXT_ALIGN"/>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_CENTRE" value="1">
+			</member>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_CENTER" value="1">
+			</member>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_RIGHT" value="2">
+			</member>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_LEFT" value="0">
+			</member>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_CENT" value="1">
+			</member>
+			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_RIGT" value="2">
+			</member>
+			<referrer name="_@OBJECT_MATERIAL_TEXT_ALIGN"/>
+			<library>omp_object</library> 
+		</member>
+		<member name="T:__PLAYER_MARKERS_MODE" value="3">
+			<tagname value="t_PLAYER_MARKERS_MODE"/>
+			<member name="C:PLAYER_MARKERS_MODE_UNKNOWN" value="-1">
+			</member>
+			<member name="C:PLAYER_MARKERS_MODE_OFF" value="0">
+			</member>
+			<member name="C:PLAYER_MARKERS_MODE_GLOBAL" value="1">
+			</member>
+			<member name="C:PLAYER_MARKERS_MODE_STREAMED" value="2">
+			</member>
+			<referrer name="_@PLAYER_MARKERS_MODE"/>
+			<library>omp_core</library>  <summary>Marker modes used by <c>ShowPlayerMarkers()</c></summary> 
+		</member>
+		<member name="T:__PLAYER_RECORDING_TYPE" value="3">
+			<tagname value="t_PLAYER_RECORDING_TYPE"/>
+			<member name="C:PLAYER_RECORDING_TYPE_NONE" value="0">
+			</member>
+			<member name="C:PLAYER_RECORDING_TYPE_DRIVER" value="1">
+			</member>
+			<member name="C:PLAYER_RECORDING_TYPE_ONFOOT" value="2">
+			</member>
+			<referrer name="_@PLAYER_RECORDING_TYPE"/>
+			<library>omp_player</library>  <summary>Recording for NPC playback</summary> 
+		</member>
+		<member name="T:__PLAYER_STATE" value="10">
+			<tagname value="t_PLAYER_STATE"/>
+			<member name="C:PLAYER_STATE_NONE" value="0">
+			</member>
+			<member name="C:PLAYER_STATE_ONFOOT" value="1">
+			</member>
+			<member name="C:PLAYER_STATE_DRIVER" value="2">
+			</member>
+			<member name="C:PLAYER_STATE_PASSENGER" value="3">
+			</member>
+			<member name="C:PLAYER_STATE_WASTED" value="7">
+			</member>
+			<member name="C:PLAYER_STATE_SPAWNED" value="8">
+			</member>
+			<member name="C:PLAYER_STATE_SPECTATING" value="9">
+			</member>
+			<referrer name="_@PLAYER_STATE"/>
+			<library>omp_player</library>  <summary>States</summary> 
+		</member>
+		<member name="T:__SELECT_OBJECT" value="3">
+			<tagname value="t_SELECT_OBJECT"/>
+			<member name="C:SELECT_OBJECT_GLOBAL_OBJECT" value="1">
+			</member>
+			<member name="C:SELECT_OBJECT_PLAYER_OBJECT" value="2">
+			</member>
+			<referrer name="_@SELECT_OBJECT"/>
+			<library>omp_object</library> 
+		</member>
+		<member name="T:__SPECIAL_ACTION" value="69">
+			<tagname value="t_SPECIAL_ACTION"/>
+			<member name="C:SPECIAL_ACTION_NONE" value="0">
+			</member>
+			<member name="C:SPECIAL_ACTION_DUCK" value="1">
+			</member>
+			<member name="C:SPECIAL_ACTION_USEJETPACK" value="2">
+			</member>
+			<member name="C:SPECIAL_ACTION_ENTER_VEHICLE" value="3">
+			</member>
+			<member name="C:SPECIAL_ACTION_EXIT_VEHICLE" value="4">
+			</member>
+			<member name="C:SPECIAL_ACTION_DANCE1" value="5">
+			</member>
+			<member name="C:SPECIAL_ACTION_DANCE2" value="6">
+			</member>
+			<member name="C:SPECIAL_ACTION_DANCE3" value="7">
+			</member>
+			<member name="C:SPECIAL_ACTION_DANCE4" value="8">
+			</member>
+			<member name="C:SPECIAL_ACTION_HANDSUP" value="10">
+			</member>
+			<member name="C:SPECIAL_ACTION_USECELLPHONE" value="11">
+			</member>
+			<member name="C:SPECIAL_ACTION_SITTING" value="12">
+			</member>
+			<member name="C:SPECIAL_ACTION_STOPUSECELLPHONE" value="13">
+			</member>
+			<member name="C:SPECIAL_ACTION_DRINK_BEER" value="20">
+			</member>
+			<member name="C:SPECIAL_ACTION_SMOKE_CIGGY" value="21">
+			</member>
+			<member name="C:SPECIAL_ACTION_DRINK_WINE" value="22">
+			</member>
+			<member name="C:SPECIAL_ACTION_DRINK_SPRUNK" value="23">
+			</member>
+			<member name="C:SPECIAL_ACTION_CUFFED" value="24">
+			</member>
+			<member name="C:SPECIAL_ACTION_CARRY" value="25">
+			</member>
+			<member name="C:SPECIAL_ACTION_PISSING" value="68">
+			</member>
+			<referrer name="_@SPECIAL_ACTION"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__SPECTATE_MODE" value="4">
+			<tagname value="t_SPECTATE_MODE"/>
+			<member name="C:SPECTATE_MODE_NORMAL" value="1">
+			</member>
+			<member name="C:SPECTATE_MODE_FIXED" value="2">
+			</member>
+			<member name="C:SPECTATE_MODE_SIDE" value="3">
+			</member>
+			<referrer name="_@SPECTATE_MODE"/>
+			<library>omp_player</library>  <summary>Spectating</summary> 
+		</member>
+		<member name="T:__SQLITE_OPEN" value="33554433">
+			<tagname value="SQLITE_OPEN"/>
+			<member name="C:SQLITE_OPEN_READONLY" value="1">
+			</member>
+			<member name="C:SQLITE_OPEN_READWRITE" value="2">
+			</member>
+			<member name="C:SQLITE_OPEN_CREATE" value="4">
+			</member>
+			<member name="C:SQLITE_OPEN_DELETEONCLOSE" value="8">
+			</member>
+			<member name="C:SQLITE_OPEN_EXCLUSIVE" value="16">
+			</member>
+			<member name="C:SQLITE_OPEN_AUTOPROXY" value="32">
+			</member>
+			<member name="C:SQLITE_OPEN_URI" value="64">
+			</member>
+			<member name="C:SQLITE_OPEN_MEMORY" value="128">
+			</member>
+			<member name="C:SQLITE_OPEN_MAIN_DB" value="256">
+			</member>
+			<member name="C:SQLITE_OPEN_TEMP_DB" value="512">
+			</member>
+			<member name="C:SQLITE_OPEN_TRANSIENT_DB" value="1024">
+			</member>
+			<member name="C:SQLITE_OPEN_MAIN_JOURNAL" value="2048">
+			</member>
+			<member name="C:SQLITE_OPEN_TEMP_JOURNAL" value="4096">
+			</member>
+			<member name="C:SQLITE_OPEN_SUBJOURNAL" value="8192">
+			</member>
+			<member name="C:SQLITE_OPEN_SUPER_JOURNAL" value="16384">
+			</member>
+			<member name="C:SQLITE_OPEN_NOMUTEX" value="32768">
+			</member>
+			<member name="C:SQLITE_OPEN_FULLMUTEX" value="65536">
+			</member>
+			<member name="C:SQLITE_OPEN_SHAREDCACHE" value="131072">
+			</member>
+			<member name="C:SQLITE_OPEN_PRIVATECACHE" value="262144">
+			</member>
+			<member name="C:SQLITE_OPEN_WAL" value="524288">
+			</member>
+			<member name="C:SQLITE_OPEN_NOFOLLOW" value="16777216">
+			</member>
+			<member name="C:SQLITE_OPEN_EXRESCODE" value="33554432">
+			</member>
+			<referrer name="_@SQLITE_OPEN"/>
+			<library>omp_database</library> 
+		</member>
+		<member name="T:__TEXT_DRAW_ALIGN" value="4">
+			<tagname value="t_TEXT_DRAW_ALIGN"/>
+			<member name="C:TEXT_DRAW_ALIGN_LEFT" value="1">
+			</member>
+			<member name="C:TEXT_DRAW_ALIGN_CENTRE" value="2">
+			</member>
+			<member name="C:TEXT_DRAW_ALIGN_CENTER" value="2">
+			</member>
+			<member name="C:TEXT_DRAW_ALIGN_RIGHT" value="3">
+			</member>
+			<referrer name="_@TEXT_DRAW_ALIGN"/>
+			<library>omp_textdraw</library>  <summary>Text draw alignment</summary> 
+		</member>
+		<member name="T:__TEXT_DRAW_FONT" value="6">
+			<tagname value="t_TEXT_DRAW_FONT"/>
+			<member name="C:TEXT_DRAW_FONT_0" value="0">
+			</member>
+			<member name="C:TEXT_DRAW_FONT_1" value="1">
+			</member>
+			<member name="C:TEXT_DRAW_FONT_2" value="2">
+			</member>
+			<member name="C:TEXT_DRAW_FONT_3" value="3">
+			</member>
+			<member name="C:TEXT_DRAW_FONT_SPRITE_DRAW" value="4">
+			</member>
+			<member name="C:TEXT_DRAW_FONT_MODEL_PREVIEW" value="5">
+			</member>
+			<referrer name="_@TEXT_DRAW_FONT"/>
+			<library>omp_textdraw</library>  <summary>Text draw font</summary> 
+		</member>
+		<member name="T:__VARTYPE" value="4">
+			<tagname value="t_VARTYPE"/>
+			<member name="C:VARTYPE_NONE" value="0">
+			</member>
+			<member name="C:VARTYPE_INT" value="1">
+			</member>
+			<member name="C:VARTYPE_STRING" value="2">
+			</member>
+			<member name="C:VARTYPE_FLOAT" value="3">
+			</member>
+			<member name="C:SERVER_VARTYPE_NONE" value="0">
+			</member>
+			<member name="C:SERVER_VARTYPE_INT" value="1">
+			</member>
+			<member name="C:SERVER_VARTYPE_STRING" value="2">
+			</member>
+			<member name="C:SERVER_VARTYPE_FLOAT" value="3">
+			</member>
+			<member name="C:PLAYER_VARTYPE_NONE" value="0">
+			</member>
+			<member name="C:PLAYER_VARTYPE_INT" value="1">
+			</member>
+			<member name="C:PLAYER_VARTYPE_STRING" value="2">
+			</member>
+			<member name="C:PLAYER_VARTYPE_FLOAT" value="3">
+			</member>
+			<referrer name="_@VARTYPE"/>
+			<library>omp_variable</library>  <summary>PVar enumeration</summary> 
+		</member>
+		<member name="T:__VEHICLE_DOOR_STATUS" value="134217728">
+			<tagname value="t_VEHICLE_DOOR_STATUS"/>
+			<member name="C:VEHICLE_DOOR_STATUS_NONE" value="0">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BONNET_OPEN" value="1">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BONNET_DAMAGED" value="2">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BONNET_MISSING" value="4">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_HOOD_OPEN" value="1">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_HOOD_DAMAGED" value="2">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_HOOD_MISSING" value="4">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BOOT_OPEN" value="256">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BOOT_DAMAGED" value="512">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_BOOT_MISSING" value="1024">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_TRUNK_OPEN" value="256">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_TRUNK_DAMAGED" value="512">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_TRUNK_MISSING" value="1024">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_LEFT_OPEN" value="65536">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_LEFT_DAMAGED" value="131072">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_LEFT_MISSING" value="262144">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_DRIVER_OPEN" value="65536">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_DRIVER_DAMAGED" value="131072">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_DRIVER_MISSING" value="262144">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_RIGHT_OPEN" value="16777216">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_RIGHT_DAMAGED" value="33554432">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_FRONT_RIGHT_MISSING" value="67108864">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_PASSENGER_OPEN" value="16777216">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_PASSENGER_DAMAGED" value="33554432">
+			</member>
+			<member name="C:VEHICLE_DOOR_STATUS_PASSENGER_MISSING" value="67108864">
+			</member>
+			<member name="C:CARDOOR_NONE" value="0">
+			</member>
+			<member name="C:CARDOOR_BONNET_OPEN" value="1">
+			</member>
+			<member name="C:CARDOOR_BONNET_DAMAGED" value="2">
+			</member>
+			<member name="C:CARDOOR_BONNET_MISSING" value="4">
+			</member>
+			<member name="C:CARDOOR_HOOD_OPEN" value="1">
+			</member>
+			<member name="C:CARDOOR_HOOD_DAMAGED" value="2">
+			</member>
+			<member name="C:CARDOOR_HOOD_MISSING" value="4">
+			</member>
+			<member name="C:CARDOOR_BOOT_OPEN" value="256">
+			</member>
+			<member name="C:CARDOOR_BOOT_DAMAGED" value="512">
+			</member>
+			<member name="C:CARDOOR_BOOT_MISSING" value="1024">
+			</member>
+			<member name="C:CARDOOR_TRUNK_OPEN" value="256">
+			</member>
+			<member name="C:CARDOOR_TRUNK_DAMAGED" value="512">
+			</member>
+			<member name="C:CARDOOR_TRUNK_MISSING" value="1024">
+			</member>
+			<member name="C:CARDOOR_FRONT_LEFT_OPEN" value="65536">
+			</member>
+			<member name="C:CARDOOR_FRONT_LEFT_DAMAGED" value="131072">
+			</member>
+			<member name="C:CARDOOR_FRONT_LEFT_MISSING" value="262144">
+			</member>
+			<member name="C:CARDOOR_DRIVER_OPEN" value="65536">
+			</member>
+			<member name="C:CARDOOR_DRIVER_DAMAGED" value="131072">
+			</member>
+			<member name="C:CARDOOR_DRIVER_MISSING" value="262144">
+			</member>
+			<member name="C:CARDOOR_FRONT_RIGHT_OPEN" value="16777216">
+			</member>
+			<member name="C:CARDOOR_FRONT_RIGHT_DAMAGED" value="33554432">
+			</member>
+			<member name="C:CARDOOR_FRONT_RIGHT_MISSING" value="67108864">
+			</member>
+			<member name="C:CARDOOR_PASSENGER_OPEN" value="16777216">
+			</member>
+			<member name="C:CARDOOR_PASSENGER_DAMAGED" value="33554432">
+			</member>
+			<member name="C:CARDOOR_PASSENGER_MISSING" value="67108864">
+			</member>
+			<referrer name="_@VEHICLE_DOOR_STATUS"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__VEHICLE_LIGHT_STATUS" value="1025">
+			<tagname value="t_VEHICLE_LIGHT_STATUS"/>
+			<member name="C:VEHICLE_LIGHT_STATUS_NONE" value="0">
+			</member>
+			<member name="C:VEHICLE_LIGHT_STATUS_FRONT_LEFT_BROKEN" value="1">
+			</member>
+			<member name="C:VEHICLE_LIGHT_STATUS_FRONT_RIGHT_BROKEN" value="4">
+			</member>
+			<member name="C:VEHICLE_LIGHT_STATUS_DRIVER_BROKEN" value="1">
+			</member>
+			<member name="C:VEHICLE_LIGHT_STATUS_PASSENGER_BROKEN" value="4">
+			</member>
+			<member name="C:VEHICLE_LIGHT_STATUS_REAR_BROKEN" value="1024">
+			</member>
+			<member name="C:CARLIGHT_FRONT_LEFT_BROKEN" value="1">
+			</member>
+			<member name="C:CARLIGHT_FRONT_RIGHT_BROKEN" value="4">
+			</member>
+			<member name="C:CARLIGHT_DRIVER_BROKEN" value="1">
+			</member>
+			<member name="C:CARLIGHT_PASSENGER_BROKEN" value="4">
+			</member>
+			<member name="C:CARLIGHT_REAR_BROKEN" value="1024">
+			</member>
+			<referrer name="_@VEHICLE_LIGHT_STATUS"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__VEHICLE_MODEL_INFO" value="10">
+			<tagname value="t_VEHICLE_MODEL_INFO"/>
+			<member name="C:VEHICLE_MODEL_INFO_SIZE" value="1">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_FRONT_SEAT" value="2">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_REAR_SEAT" value="3">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_PETROL_CAP" value="4">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELS_FRONT" value="5">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELS_REAR" value="6">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELS_MID" value="7">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_FRONT_BUMPER_Z" value="8">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_REAR_BUMPER_Z" value="9">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_FRONTSEAT" value="2">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_REARSEAT" value="3">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_PETROLCAP" value="4">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELSFRONT" value="5">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELSREAR" value="6">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_WHEELSMID" value="7">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_FRONT_BUMPER" value="8">
+			</member>
+			<member name="C:VEHICLE_MODEL_INFO_REAR_BUMPER" value="9">
+			</member>
+			<referrer name="_@VEHICLE_MODEL_INFO"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__VEHICLE_PANEL_STATUS" value="1">
+			<tagname value="t_VEHICLE_PANEL_STATUS"/>
+			<member name="C:VEHICLE_PANEL_STATUS_NONE" value="0">
+			</member>
+			<referrer name="_@VEHICLE_PANEL_STATUS"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__VEHICLE_TYRE_STATUS" value="2">
+			<tagname value="t_VEHICLE_TYRE_STATUS"/>
+			<member name="C:VEHICLE_TYRE_STATUS_NONE" value="0">
+			</member>
+			<member name="C:VEHICLE_TYRE_STATUS_FRONT_LEFT_POPPED" value="8">
+			</member>
+			<member name="C:VEHICLE_TYRE_STATUS_FRONT_RIGHT_POPPED" value="2">
+			</member>
+			<member name="C:VEHICLE_TYRE_STATUS_REAR_LEFT_POPPED" value="4">
+			</member>
+			<member name="C:VEHICLE_TYRE_STATUS_REAR_RIGHT_POPPED" value="1">
+			</member>
+			<member name="C:VEHICLE_TIRE_STATUS_FRONT_LEFT_POPPED" value="8">
+			</member>
+			<member name="C:VEHICLE_TIRE_STATUS_FRONT_RIGHT_POPPED" value="2">
+			</member>
+			<member name="C:VEHICLE_TIRE_STATUS_REAR_LEFT_POPPED" value="4">
+			</member>
+			<member name="C:VEHICLE_TIRE_STATUS_REAR_RIGHT_POPPED" value="1">
+			</member>
+			<member name="C:CARTYRE_FRONT_LEFT_POPPED" value="8">
+			</member>
+			<member name="C:CARTYRE_FRONT_RIGHT_POPPED" value="2">
+			</member>
+			<member name="C:CARTYRE_REAR_LEFT_POPPED" value="4">
+			</member>
+			<member name="C:CARTYRE_REAR_RIGHT_POPPED" value="1">
+			</member>
+			<member name="C:CARTIRE_FRONT_LEFT_POPPED" value="8">
+			</member>
+			<member name="C:CARTIRE_FRONT_RIGHT_POPPED" value="2">
+			</member>
+			<member name="C:CARTIRE_REAR_LEFT_POPPED" value="4">
+			</member>
+			<member name="C:CARTIRE_REAR_RIGHT_POPPED" value="1">
+			</member>
+			<referrer name="_@VEHICLE_TYRE_STATUS"/>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="T:__WEAPON" value="55">
+			<tagname value="t_WEAPON"/>
+			<member name="C:WEAPON_UNKNOWN" value="-1">
+			</member>
+			<member name="C:WEAPON_FIST" value="0">
+			</member>
+			<member name="C:WEAPON_BRASSKNUCKLE" value="1">
+			</member>
+			<member name="C:WEAPON_GOLFCLUB" value="2">
+			</member>
+			<member name="C:WEAPON_NITESTICK" value="3">
+			</member>
+			<member name="C:WEAPON_NIGHTSTICK" value="3">
+			</member>
+			<member name="C:WEAPON_KNIFE" value="4">
+			</member>
+			<member name="C:WEAPON_BAT" value="5">
+			</member>
+			<member name="C:WEAPON_SHOVEL" value="6">
+			</member>
+			<member name="C:WEAPON_POOLSTICK" value="7">
+			</member>
+			<member name="C:WEAPON_KATANA" value="8">
+			</member>
+			<member name="C:WEAPON_CHAINSAW" value="9">
+			</member>
+			<member name="C:WEAPON_DILDO" value="10">
+			</member>
+			<member name="C:WEAPON_DILDO2" value="11">
+			</member>
+			<member name="C:WEAPON_VIBRATOR" value="12">
+			</member>
+			<member name="C:WEAPON_VIBRATOR2" value="13">
+			</member>
+			<member name="C:WEAPON_FLOWER" value="14">
+			</member>
+			<member name="C:WEAPON_CANE" value="15">
+			</member>
+			<member name="C:WEAPON_GRENADE" value="16">
+			</member>
+			<member name="C:WEAPON_TEARGAS" value="17">
+			</member>
+			<member name="C:WEAPON_MOLTOV" value="18">
+			</member>
+			<member name="C:WEAPON_MOLOTOV" value="18">
+			</member>
+			<member name="C:WEAPON_COLT45" value="22">
+			</member>
+			<member name="C:WEAPON_SILENCED" value="23">
+			</member>
+			<member name="C:WEAPON_DEAGLE" value="24">
+			</member>
+			<member name="C:WEAPON_SHOTGUN" value="25">
+			</member>
+			<member name="C:WEAPON_SAWEDOFF" value="26">
+			</member>
+			<member name="C:WEAPON_SHOTGSPA" value="27">
+			</member>
+			<member name="C:WEAPON_UZI" value="28">
+			</member>
+			<member name="C:WEAPON_MP5" value="29">
+			</member>
+			<member name="C:WEAPON_AK47" value="30">
+			</member>
+			<member name="C:WEAPON_M4" value="31">
+			</member>
+			<member name="C:WEAPON_TEC9" value="32">
+			</member>
+			<member name="C:WEAPON_RIFLE" value="33">
+			</member>
+			<member name="C:WEAPON_SNIPER" value="34">
+			</member>
+			<member name="C:WEAPON_ROCKETLAUNCHER" value="35">
+			</member>
+			<member name="C:WEAPON_HEATSEEKER" value="36">
+			</member>
+			<member name="C:WEAPON_FLAMETHROWER" value="37">
+			</member>
+			<member name="C:WEAPON_MINIGUN" value="38">
+			</member>
+			<member name="C:WEAPON_SATCHEL" value="39">
+			</member>
+			<member name="C:WEAPON_BOMB" value="40">
+			</member>
+			<member name="C:WEAPON_SPRAYCAN" value="41">
+			</member>
+			<member name="C:WEAPON_FIREEXTINGUISHER" value="42">
+			</member>
+			<member name="C:WEAPON_CAMERA" value="43">
+			</member>
+			<member name="C:WEAPON_NIGHT_VISION_GOGGLES" value="44">
+			</member>
+			<member name="C:WEAPON_THERMAL_GOGGLES" value="45">
+			</member>
+			<member name="C:WEAPON_PARACHUTE" value="46">
+			</member>
+			<member name="C:WEAPON_VEHICLE" value="49">
+			</member>
+			<member name="C:WEAPON_DROWN" value="53">
+			</member>
+			<member name="C:WEAPON_COLLISION" value="54">
+			</member>
+			<member name="C:WEAPON_SPLAT" value="54">
+			</member>
+			<referrer name="_@WEAPON"/>
+			<library>open.mp</library>  <summary>Weapons</summary> 
+		</member>
+		<member name="T:__WEAPONSKILL" value="11">
+			<tagname value="t_WEAPONSKILL"/>
+			<member name="C:WEAPONSKILL_PISTOL" value="0">
+			</member>
+			<member name="C:WEAPONSKILL_PISTOL_SILENCED" value="1">
+			</member>
+			<member name="C:WEAPONSKILL_DESERT_EAGLE" value="2">
+			</member>
+			<member name="C:WEAPONSKILL_SHOTGUN" value="3">
+			</member>
+			<member name="C:WEAPONSKILL_SAWNOFF_SHOTGUN" value="4">
+			</member>
+			<member name="C:WEAPONSKILL_SPAS12_SHOTGUN" value="5">
+			</member>
+			<member name="C:WEAPONSKILL_MICRO_UZI" value="6">
+			</member>
+			<member name="C:WEAPONSKILL_MP5" value="7">
+			</member>
+			<member name="C:WEAPONSKILL_AK47" value="8">
+			</member>
+			<member name="C:WEAPONSKILL_M4" value="9">
+			</member>
+			<member name="C:WEAPONSKILL_SNIPERRIFLE" value="10">
+			</member>
+			<referrer name="_@WEAPONSKILL"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__WEAPONSTATE" value="4">
+			<tagname value="t_WEAPONSTATE"/>
+			<member name="C:WEAPONSTATE_UNKNOWN" value="-1">
+			</member>
+			<member name="C:WEAPONSTATE_NO_BULLETS" value="0">
+			</member>
+			<member name="C:WEAPONSTATE_LAST_BULLET" value="1">
+			</member>
+			<member name="C:WEAPONSTATE_MORE_BULLETS" value="2">
+			</member>
+			<member name="C:WEAPONSTATE_RELOADING" value="3">
+			</member>
+			<referrer name="_@WEAPONSTATE"/>
+			<library>omp_player</library> 
+		</member>
+		<member name="T:__WEAPON_SLOT" value="13">
+			<tagname value="t_WEAPON_SLOT"/>
+			<member name="C:WEAPON_SLOT_UNKNOWN" value="-1">
+			</member>
+			<member name="C:WEAPON_SLOT_UNARMED" value="0">
+			</member>
+			<member name="C:WEAPON_SLOT_MELEE" value="1">
+			</member>
+			<member name="C:WEAPON_SLOT_PISTOL" value="2">
+			</member>
+			<member name="C:WEAPON_SLOT_SHOTGUN" value="3">
+			</member>
+			<member name="C:WEAPON_SLOT_MACHINE_GUN" value="4">
+			</member>
+			<member name="C:WEAPON_SLOT_ASSAULT_RIFLE" value="5">
+			</member>
+			<member name="C:WEAPON_SLOT_LONG_RIFLE" value="6">
+			</member>
+			<member name="C:WEAPON_SLOT_ARTILLERY" value="7">
+			</member>
+			<member name="C:WEAPON_SLOT_EXPLOSIVES" value="8">
+			</member>
+			<member name="C:WEAPON_SLOT_EQUIPMENT" value="9">
+			</member>
+			<member name="C:WEAPON_SLOT_GIFT" value="10">
+			</member>
+			<member name="C:WEAPON_SLOT_GADGET" value="11">
+			</member>
+			<member name="C:WEAPON_SLOT_DETONATOR" value="12">
+			</member>
+			<referrer name="_@WEAPON_SLOT"/>
+			<library>open.mp</library>  <summary>Weapon Slots</summary> 
+		</member>
+		<member name="T:anglemode" value="3">
+			<tagname value="anglemode"/>
+			<member name="C:radian" value="0">
+			</member>
+			<member name="C:degrees" value="1">
+			</member>
+			<member name="C:grades" value="2">
+			</member>
+			<referrer name="_@anglemode"/>
+			<library>float</library> 
+		</member>
+		<member name="T:filemode" value="4">
+			<tagname value="filemode"/>
+			<member name="C:io_read" value="0">
+			</member>
+			<member name="C:io_write" value="1">
+			</member>
+			<member name="C:io_readwrite" value="2">
+			</member>
+			<member name="C:io_append" value="3">
+			</member>
+			<referrer name="_@filemode"/>
+			<library>file</library> 
+		</member>
+		<member name="T:floatround_method" value="5">
+			<tagname value="floatround_method"/>
+			<member name="C:floatround_round" value="0">
+			</member>
+			<member name="C:floatround_floor" value="1">
+			</member>
+			<member name="C:floatround_ceil" value="2">
+			</member>
+			<member name="C:floatround_tozero" value="3">
+			</member>
+			<member name="C:floatround_unbiased" value="4">
+			</member>
+			<referrer name="_@floatround_method"/>
+			<library>float</library>  <summary>Different methods of rounding.</summary> 
+		</member>
+		<member name="T:seek_whence" value="3">
+			<tagname value="seek_whence"/>
+			<member name="C:seek_start" value="0">
+			</member>
+			<member name="C:seek_current" value="1">
+			</member>
+			<member name="C:seek_end" value="2">
+			</member>
+			<referrer name="_@seek_whence"/>
+			<library>file</library> 
+		</member>
+
+		<!-- constants -->
+		<member name="C:EOS" value="0">
+			<referrer name="strcopy"/>
+		</member>
+		<member name="C:__PawnBuild" value="11">
+		</member>
+		<member name="C:__namemax" value="63">
+			<summary>  The maximum length of symbol names, excluding any NULLs.  </summary> 
+		</member>
+		<member name="C:cellmax" value="2147483647">
+			<referrer name="operator!(Float:)"/>
+		</member>
+		<member name="C:cellmin" value="-2147483648">
+			<referrer name="operator-(Float:)"/>
+		</member>
+		<member name="C:false" value="0">
+			<tagname value="bool"/>
+			<referrer name="fflush"/>
+			<referrer name="strequal"/>
+		</member>
+		<member name="C:true" value="1">
+			<tagname value="bool"/>
+			<referrer name="fflush"/>
+		</member>
+		<member name="C:undefined" value="-1">
+			<tagname value="bool"/>
+			<summary>  An invalid value (<c>-1</c>) as a boolean for some natives (most notably  the vehicle param ones) that can skip `true`/`false` parameters.  </summary> 
+		</member>
+
+		<!-- variables -->
+		<member name="F:__OPEN_MP_VERSION">
+			<attribute name="public"/>
+			<remarks>  If running on SA:MP this will remain <c>0</c>, open.mp will set it.  open.mp versions look like:  <code>  01.04.02.0544  </code>  Thus they are encoded here as:  <code>  (major << 28) | (minor << 21) | (patch << 14) | (prerel)  </code>  </remarks> 
+		</member>
+		<member name="F:__SAMP_INCLUDES_VERSION">
+			<attribute name="public"/>
+			<remarks>  Version examples:  <ul>  <li><c>0.3.DL R1       - 03D010</c></li>  <li>                               </li>  <li><c>0.3.7 R3        - 037030</c></li>  <li><c>0.3.7 R2-2      - 037022</c></li>  <li><c>0.3.7 R1-2      - 037012</c></li>  <li><c>0.3.7           - 037000</c></li>  <li>                               </li>  <li><c>0.3z R4         - 030700</c></li>  <li><c>0.3z R3         - 030700</c></li>  <li><c>0.3z R2-1       - 030700</c></li>  <li><c>0.3z R1-2       - 030700</c></li>  <li><c>0.3z            - 030700</c></li>  <li><c>0.3x R2 patch 1 - 030621</c></li>  <li><c>0.3x R2         - 030620</c></li>  <li><c>0.3x R1-2       - 030612</c></li>  <li><c>0.3x            - 030600</c></li>  <li><c>0.3e            - 030500</c></li>  <li><c>0.3d            - 030400</c></li>  <li><c>0.3c            - 030300</c></li>  <li><c>0.3b            - 030200</c></li>  <li><c>0.3a            - 030100</c></li>  <li>                               </li>  <li><c>0.2X            - 02A000</c></li>  <li><c>0.2.2 R3        - 022300</c></li>  </ul>  Rough rules:  <p />  Uses (roughtly) BCD.  Special versions are denoted outside 0-9.  <code>  0.1.2c R4-5  | | ||  | |  0 1 23  4 5  =  0x012345  </code>  (assuming c is the third revision)  <p />  0.2X becomes 02A000 because it is basically 0.2.3, but not, while higher than  0.2.2 so can't be 020400 (for example).  Also, its a capital letter, so doesn't  use the revision method.  <p />  P.S.  Making a consistent scheme for SA:MP versions is REALLY hard.  <p />  open.mp releases can use `A` as the first digit.  </remarks> 
+		</member>
+		<member name="F:__date">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__time">
+		</member>
+
+		<!-- functions -->
+		<member name="M:operator!(Float:)" syntax="operator!(Float:)(oper)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<dependency name="cellmax"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator%(_:,Float:)" syntax="operator%(_:,Float:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator%(Float:,_:)" syntax="operator%(Float:,_:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator%(Float:,Float:)" syntax="operator%(Float:,Float:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator!=(Float:,_:)" syntax="operator!=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator!=(Float:,Float:)" syntax="operator!=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator-(_:,Float:)" syntax="operator-(_:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatsub"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator-(Float:,_:)" syntax="operator-(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatsub"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator+(Float:,_:)" syntax="operator+(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatadd"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator/(_:,Float:)" syntax="operator/(_:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatdiv"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator/(Float:,_:)" syntax="operator/(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatdiv"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator*(Float:,_:)" syntax="operator*(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatmul"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator++(Float:)" syntax="operator++(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="operator+(Float:,Float:)"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator-(Float:)" syntax="operator-(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="cellmin"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator--(Float:)" syntax="operator--(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="operator-(Float:,Float:)"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator-(Float:,Float:)" syntax="operator-(Float:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator--(Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator+(Float:,Float:)" syntax="operator+(Float:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator++(Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator%(File:,_:)" syntax="operator%(File:,_:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator%(_:,File:)" syntax="operator%(_:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator%(File:,File:)" syntax="operator%(File:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator/(File:,_:)" syntax="operator/(File:,_:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator/(_:,File:)" syntax="operator/(_:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator/(File:,File:)" syntax="operator/(File:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator*(File:,_:)" syntax="operator*(File:,_:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator*(File:,File:)" syntax="operator*(File:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator-(File:,_:)" syntax="operator-(File:,_:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator-(_:,File:)" syntax="operator-(_:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator-(File:,File:)" syntax="operator-(File:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator+(File:,_:)" syntax="operator+(File:,_:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator+(File:,File:)" syntax="operator+(File:,File:)(a, b)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator++(File:)" syntax="operator++(File:)(a)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator-(File:)" syntax="operator-(File:)(a)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator--(File:)" syntax="operator--(File:)(a)">
+			<tagname value="File"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;(File:,File:)" syntax="operator&lt;(File:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;(_:,File:)" syntax="operator&lt;(_:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;(File:,_:)" syntax="operator&lt;(File:,_:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;=(File:,File:)" syntax="operator&lt;=(File:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;=(_:,File:)" syntax="operator&lt;=(_:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&lt;=(File:,_:)" syntax="operator&lt;=(File:,_:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;(File:,File:)" syntax="operator&gt;(File:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;(_:,File:)" syntax="operator&gt;(_:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;(File:,_:)" syntax="operator&gt;(File:,_:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;=(File:,File:)" syntax="operator&gt;=(File:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;=(_:,File:)" syntax="operator&gt;=(_:,File:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+			</param>
+			<param name="b">
+				<paraminfo>File </paraminfo>
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator&gt;=(File:,_:)" syntax="operator&gt;=(File:,_:)(a, b)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="a">
+				<paraminfo>File </paraminfo>
+			</param>
+			<param name="b">
+			</param>
+			<library>file</library> 
+		</member>
+		<member name="M:operator==(Float:,Float:)" syntax="operator==(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator==(Float:,_:)" syntax="operator==(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;(Float:,Float:)" syntax="operator&gt;(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;(Float:,_:)" syntax="operator&gt;(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;(_:,Float:)" syntax="operator&gt;(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;=(Float:,Float:)" syntax="operator&gt;=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;=(Float:,_:)" syntax="operator&gt;=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&gt;=(_:,Float:)" syntax="operator&gt;=(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;(Float:,Float:)" syntax="operator&lt;(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;(Float:,_:)" syntax="operator&lt;(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;(_:,Float:)" syntax="operator&lt;(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;=(Float:,Float:)" syntax="operator&lt;=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;=(Float:,_:)" syntax="operator&lt;=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:operator&lt;=(_:,Float:)" syntax="operator&lt;=(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>float</library> 
+		</member>
+		<member name="M:@timer" syntax="@timer()">
+			<attribute name="public"/>
+			<stacksize value="1"/>
+			<library>time</library>  <summary>A timer event occurred.</summary>  <remarks>  This function executes after the configured delay or interval expires.  See <c>settimer</c> to  set the delay or interval.  Depending on the timing precision of the host, the call may occur  later than the delay that was set.  <p/>  If the timer was set as a "single-shot", it must be ex plicitly set again for a next execution  for the <c>@timer</c>function.  If the timer is set to be repetitive, <c>@timer</c> will continue  to be called with the set interval until it is disabled with another call to <c>settimer</c>.  </remarks>  <returns>The return value of this function is currently ignored.</returns> 
+		</member>
+		<member name="M:CefEmitEvent" syntax="CefEmitEvent(player_id, event[], args[])">
+			<attribute name="public"/>
+			<stacksize value="7"/>
+			<dependency name="CEF_STRING"/>
+			<dependency name="cef_emit_event"/>
+			<param name="player_id">
+			</param>
+			<param name="event">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="args">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:GetPlayerIp" syntax="GetPlayerIp(playerid, ip[], len)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerConnect"/>
+			<param name="playerid">
+				The ID of the player to get the IP address of
+			</param>
+			<param name="ip">
+				<paraminfo> [] </paraminfo>
+				An array into which to store the player's IP address, passed by reference
+			</param>
+			<param name="len">
+				The maximum length of the IP address (recommended 16)
+			</param>
+			<library>omp_network</library>  <summary>Get the specified player's IP address and store it in a string.</summary>        <seealso name="NetStats_GetIpPort" />  <seealso name="GetPlayerName" />  <seealso name="GetPlayerPing" />  <seealso name="GetPlayerVersion" />  <seealso name="OnIncomingConnection" />  <seealso name="OnPlayerConnect" />  <seealso name="OnPlayerDisconnect" />  <remarks>This function does not work when used in <a href="#OnPlayerDisconnect">OnPlayerDisconnect</a>  because the player is already disconnected.  It will return an invalid IP (<b><c>255.255.255.255</c></b>).  Save players' IPs under <a href="#OnPlayerConnect">OnPlayerConnect</a> if they need to be used under  <a href="#OnPlayerDisconnect">OnPlayerDisconnect</a>. </remarks>  <returns><b><c>1</c></b> on success and <b><c>0</c></b> on failure.</returns> 
+		</member>
+		<member name="M:GetPlayerLastSyncedTrailerID" syntax="GetPlayerLastSyncedTrailerID(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:GetPlayerLastSyncedVehicleID" syntax="GetPlayerLastSyncedVehicleID(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:GetServerRuleFlags" syntax="GetServerRuleFlags(rule[])">
+			<tagname value="E_SERVER_RULE_FLAGS"/>
+			<stacksize value="1"/>
+			<param name="rule">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<library>omp_core</library> 
+		</member>
+		<member name="M:HasObjectCameraCollision" syntax="HasObjectCameraCollision(objectid)">
+			<tagname value="bool"/>
+			<stacksize value="3"/>
+			<dependency name="__IsObjectNoCameraCol"/>
+			<param name="objectid">
+			</param>
+			<library>omp_object</library>  <summary></summary> 
+		</member>
+		<member name="M:HasPlayerObjectCameraCollision" syntax="HasPlayerObjectCameraCollision(playerid, objectid)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="__IsObjectNoCameraCol"/>
+			<param name="playerid">
+			</param>
+			<param name="objectid">
+			</param>
+			<library>omp_object</library>  <summary></summary> 
+		</member>
+		<member name="M:HideVehicle" syntax="HideVehicle(vehicleid)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:IsVehicleHidden" syntax="IsVehicleHidden(vehicleid)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:OnActorStreamIn" syntax="OnActorStreamIn(actorid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="actorid">
+				The ID of the actor that has been streamed in for the player
+			</param>
+			<param name="forplayerid">
+				The ID of the player that streamed the actor in
+			</param>
+			<summary>This callback is called when an actor is streamed in by a player's client.</summary>      <seealso name="OnActorStreamOut" />  <seealso name="OnPlayerStreamIn" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>It is always called first in filterscripts.</remarks>  <returns>This callback does not handle returns.</returns> 
+		</member>
+		<member name="M:OnActorStreamOut" syntax="OnActorStreamOut(actorid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="actorid">
+				The ID of the actor that has been streamed out for the player
+			</param>
+			<param name="forplayerid">
+				The ID of the player that streamed the actor out
+			</param>
+			<summary>This callback is called when an actor is streamed out by a player's client.</summary>      <seealso name="OnActorStreamIn" />  <seealso name="OnPlayerStreamOut" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>It is always called first in filterscripts.</remarks>  <returns>This callback does not handle returns.</returns> 
+		</member>
+		<member name="M:OnClientCheckResponse" syntax="OnClientCheckResponse(playerid, actionid, memaddr, retndata)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player checked
+			</param>
+			<param name="actionid">
+				The type of check performed
+			</param>
+			<param name="memaddr">
+				The address requested
+			</param>
+			<param name="retndata">
+				The result of the check
+			</param>
+			<summary>This callback is called when a SendClientCheck request comletes</summary>          <seealso name="SendClientCheck" /> 
+		</member>
+		<member name="M:OnDialogResponse" syntax="OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that responded to the dialog
+			</param>
+			<param name="dialogid">
+				The ID of the dialog the player responded to, assigned in ShowPlayerDialog
+			</param>
+			<param name="response">
+				<b><c>1</c></b> for left button and <b><c>0</c></b> for right button (if only  one button shown, always <b><c>1</c></b>)
+			</param>
+			<param name="listitem">
+				The ID of the list item selected by the player (starts at <b><c>0</c></b>)  (only if using a list style dialog)
+			</param>
+			<param name="inputtext">
+				<paraminfo> [] </paraminfo>
+				The text entered into the input box by the player or the selected list item  text
+			</param>
+			<library>omp_dialog</library>  <summary>This callback is called when a player responds to a dialog shown using <a href="#ShowPlayerDialog">ShowPlayerDialog</a>  by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style  dialog).</summary>            <seealso name="ShowPlayerDialog" />  <remarks>A player's dialog doesn't hide when the gamemode restarts, causing the server to print <c>"Warning:  PlayerDialogResponse PlayerId: 0 dialog ID doesn't match last sent dialog ID"</c> if a player responded  to this dialog after restart.</remarks>  <remarks>Parameters can contain different values, based on dialog's <a href="https://open.mp/docs/scripting/resources/dialogstyles">style</ </remarks>  <returns>  Returning <b><c>0</c></b> in this callback will pass the dialog to another script in case no matching  code were found in your gamemode's callback.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnEnterExitModShop" syntax="OnEnterExitModShop(playerid, enterexit, interiorid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that entered or exited the modshop
+			</param>
+			<param name="enterexit">
+				<b><c>1</c></b> if the player entered or <b><c>0</c></b> if they exited
+			</param>
+			<param name="interiorid">
+				The interior ID of the modshop that the player is entering (or 0 if exiting)
+			</param>
+			<summary>This callback is called when a player enters or exits a mod shop.</summary>        <seealso name="OnVehicleMod" />  <seealso name="OnVehicleRespray" />  <seealso name="OnVehiclePaintjob" />  <seealso name="AddVehicleComponent" />  <remarks>Players collide when they get into the same mod shop.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnFilterScriptExit" syntax="OnFilterScriptExit()">
+			<stacksize value="1"/>
+			<summary>This callback is called when a filterscript is unloaded.  It is only called inside the filterscript  which is unloaded.</summary>  <seealso name="OnFilterScriptInit" />  <seealso name="OnGameModeInit" />  <seealso name="OnGameModeExit" />  <returns>This callback does not handle returns.</returns> 
+		</member>
+		<member name="M:OnFilterScriptInit" syntax="OnFilterScriptInit()">
+			<stacksize value="1"/>
+			<summary>This callback is called when a filterscript is initialized (loaded).  It is only called  inside the filterscript which is starting.</summary>  <seealso name="OnFilterScriptExit" />  <seealso name="OnGameModeInit" />  <seealso name="OnGameModeExit" />  <returns>This callback does not handle returns.</returns> 
+		</member>
+		<member name="M:OnGameModeExit" syntax="OnGameModeExit()">
+			<stacksize value="1"/>
+			<summary>This callback is called when a gamemode ends, either through 'gmx', the server being shut  down, or <a href="#GameModeExit">GameModeExit</a>.</summary>  <seealso name="OnGameModeInit" />  <seealso name="OnFilterScriptExit" />  <seealso name="OnFilterScriptInit" />  <seealso name="GameModeExit" />  <remarks>This function can also be used in a filterscript to detect if the gamemode changes with  RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.</remarks>  <remarks>When using OnGameModeExit in conjunction with the 'rcon gmx' console command keep in mind  there is a potential for client bugs to occur an example of this is excessive  <a href="#RemoveBuildingForPlayer">RemoveBuildingForPlayer</a>  calls during OnGameModeInit which could result in a client crash. </remarks>  <remarks>This callback will NOT be called if the server crashes or the process is killed by other  means, such as using the Linux kill command or pressing the close-button on the Windows console.  </remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnGameModeInit" syntax="OnGameModeInit()">
+			<stacksize value="1"/>
+			<summary>This callback is triggered when the gamemode starts.</summary>  <seealso name="OnGameModeExit" />  <seealso name="OnFilterScriptInit" />  <seealso name="OnFilterScriptExit" />  <remarks>This function can also be used in a filterscript to detect if the gamemode changes with  RCON commands like changemode or gmx, as changing the gamemode does not reload a filterscript.</remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnIncomingConnection" syntax="OnIncomingConnection(playerid, ip_address[], port)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player attempting to connect
+			</param>
+			<param name="ip_address">
+				<paraminfo> [] </paraminfo>
+				The IP address of the player attempting to connect
+			</param>
+			<param name="port">
+				The port of the attempted connection
+			</param>
+			<summary>This callback is called when an IP address attempts a connection to the server.  To block  incoming connections, use <a href="#BlockIpAddress">BlockIpAddress</a>.</summary>        <seealso name="OnPlayerConnect" />  <seealso name="OnPlayerDisconnect" />  <seealso name="OnPlayerFinishedDownloading" />  <seealso name="BlockIpAddress" />  <seealso name="UnBlockIpAddress" />  <returns>  <b><c>1</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnObjectMoved" syntax="OnObjectMoved(objectid)">
+			<stacksize value="1"/>
+			<param name="objectid">
+				The ID of the object that was moved
+			</param>
+			<summary>This callback is called when an object is moved after <a href="#MoveObject">MoveObject</a>  (when it stops moving).</summary>    <seealso name="MoveObject" />  <seealso name="IsObjectMoving" />  <seealso name="StopObject" />  <seealso name="OnPlayerObjectMoved" />  <remarks><a href="#SetObjectPos">SetObjectPos</a> does not work when used in this callback.  To fix  it, recreate the object.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPickupStreamIn" syntax="OnPickupStreamIn(pickupid, playerid)">
+			<stacksize value="1"/>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePickup
+			</param>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<summary>Called when a pickup enters the visual range of a player.</summary>      <seealso name="CreatePickup" />  <seealso name="DestroyPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPickupStreamOut" syntax="OnPickupStreamOut(pickupid, playerid)">
+			<stacksize value="1"/>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePickup
+			</param>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<summary>Called when a pickup leaves the visual range of a player.</summary>      <seealso name="CreatePickup" />  <seealso name="DestroyPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerClickGangZone" syntax="OnPlayerClickGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerClickMap" syntax="OnPlayerClickMap(playerid, fX, fY, fZ)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that placed a target/waypoint
+			</param>
+			<param name="fX">
+				<paraminfo>Float </paraminfo>
+				The X float coordinate where the player clicked
+			</param>
+			<param name="fY">
+				<paraminfo>Float </paraminfo>
+				The Y float coordinate where the player clicked
+			</param>
+			<param name="fZ">
+				<paraminfo>Float </paraminfo>
+				The Z float coordinate where the player clicked (inaccurate - see note below)
+			</param>
+			<summary>OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map  (by right-clicking).</summary>          <seealso name="SetPlayerPos" />  <seealso name="SetPlayerPosFindZ" />  <seealso name="GetPlayerPos" />  <remarks>The Z value returned will be <b><c>0</c></b> (invalid) if it is far away from the player;  use the <a href="http://forum.sa-mp.com/showthread.php?t=275492">MapAndreas plugin</a> to get a more  accurate Z coordinate.</remarks>  <returns>  <b><c>1</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerClickPlayer" syntax="OnPlayerClickPlayer(playerid, clickedplayerid, source)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that clicked on a player on the scoreboard
+			</param>
+			<param name="clickedplayerid">
+				The ID of the player that was clicked on
+			</param>
+			<param name="source">
+				<paraminfo>t_CLICK_SOURCE </paraminfo>
+				The source of the player's click
+			</param>
+			<summary>Called when a player double-clicks on a player on the scoreboard.</summary>        <seealso name="OnPlayerClickTextDraw" />  <remarks>There is currently only one <paramref name="source" /> (<b><c>0 - CLICK_SOURCE_SCOREBOARD</c></b>).  The existence of this argument suggests that more sources may be supported in the future.</remarks>  <returns>  <b><c>1</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerClickPlayerGangZone" syntax="OnPlayerClickPlayerGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerClickPlayerTextDraw" syntax="OnPlayerClickPlayerTextDraw(playerid, playertextid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that selected a textdraw
+			</param>
+			<param name="playertextid">
+				<paraminfo>PlayerText </paraminfo>
+				The ID of the player-textdraw that the player selected
+			</param>
+			<summary>This callback is called when a player clicks on a player-textdraw.  It is not called when  player cancels the select mode (ESC) - however, <a href="#OnPlayerClickTextDraw">OnPlayerClickTextDraw</a>  is.</summary>      <seealso name="PlayerTextDrawSetSelectable" />  <seealso name="OnPlayerClickTextDraw" />  <seealso name="OnPlayerClickPlayer" />  <remarks>When a player presses ESC to cancel selecting a textdraw, <a href="#OnPlayerClickTextDraw">OnPlayerClickTextDraw</a>  is called with a textdraw ID of <b><c>INVALID_TEXT_DRAW</c></b>. <a href="#OnPlayerClickPlayerTextDraw">OnPlayerClickPlayerTextDraw</a>  won't be called also.</remarks>  <returns>  Returning <b><c>1</c></b> in this callback will prevent it being called in other scripts.  This  should be used to signal that the textdraw on which they clicked was 'found' and no further processing  is needed.  You should return <b><c>0</c></b> if the textdraw on which they clicked wasn't found,  just like in <a href="#OnPlayerCommandText">OnPlayerCommandText</a>.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there also blocks other  scripts from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerClickTextDraw" syntax="OnPlayerClickTextDraw(playerid, clickedid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that clicked on the textdraw
+			</param>
+			<param name="clickedid">
+				<paraminfo>Text </paraminfo>
+				The ID of the clicked textdraw. <b><c>INVALID_TEXT_DRAW</c></b> if selection  was cancelled
+			</param>
+			<summary>This callback is called when a player clicks on a textdraw or cancels the select mode with  the Escape key.</summary>      <seealso name="OnPlayerClickPlayerTextDraw" />  <seealso name="OnPlayerClickPlayer" />  <remarks>The clickable area is defined by <a href="#TextDrawTextSize">TextDrawTextSize</a>.  The  x and y parameters passed to that function must not be zero or negative. </remarks>  <remarks>Do not use <a href="#CancelSelectTextDraw">CancelSelectTextDraw</a> unconditionally within  this callback.  This results in an infinite loop. </remarks>  <returns>  Returning <b><c>1</c></b> in this callback will prevent it being called in other scripts.  This  should be used to signal that the textdraw on which they clicked was 'found' and no further processing  is needed.  You should return <b><c>0</c></b> if the textdraw on which they clicked wasn't found,  just like in <a href="#OnPlayerCommandText">OnPlayerCommandText</a>.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there also blocks other  scripts from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerCommandText" syntax="OnPlayerCommandText(playerid, cmdtext[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that entered a command
+			</param>
+			<param name="cmdtext">
+				<paraminfo> [] </paraminfo>
+				The command that was entered (including the forward slash)
+			</param>
+			<summary>This callback is called when a player enters a command into the client chat window.  Commands  are anything that start with a forward slash, e.g. <c>/help</c>.</summary>      <seealso name="OnPlayerText" />  <seealso name="OnRconCommand" />  <seealso name="SendRconCommand" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  Return <b><c>1</c></b> if the command was processed, otherwise <b><c>0</c></b>; If the command  was not found both in filterscripts and in gamemode, the player will be received a message: <em>SERVER:  Unknown command</em>.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks other scripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerConnect" syntax="OnPlayerConnect(playerid)">
+			<attribute name="public"/>
+			<stacksize value="27"/>
+			<dependency name="GetPlayerIp"/>
+			<dependency name="cef_on_player_connect"/>
+			<param name="playerid">
+				The ID of the player that connected
+			</param>
+			<summary>This callback is called when a player connects to the server.</summary>    <seealso name="OnPlayerDisconnect" />  <seealso name="OnIncomingConnection" />  <seealso name="OnPlayerFinishedDownloading" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerDeath" syntax="OnPlayerDeath(playerid, killerid, reason)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that died
+			</param>
+			<param name="killerid">
+				The ID of the player that killed the player who died, or <b><c>INVALID_PLAYER_ID</c></b>  if there was none
+			</param>
+			<param name="reason">
+				The ID of the <a href="http://wiki.sa-mp.com/wiki/Weapons">reason</a> for the  player's death
+			</param>
+			<summary>This callback is called when a player dies, either by suicide or by being killed by another  player.</summary>        <seealso name="OnPlayerSpawn" />  <seealso name="SendDeathMessage" />  <seealso name="SetPlayerHealth" />  <remarks>  The reason will return 37 (flame thrower) from any fire sources (e.g.  molotov, 18)<br />  The reason will return 51 from any weapon that creates an explosion (e.g.  RPG, grenade)<br />  You do not need to check whether killerid is valid before using it in <a href="#SendDeathMessage">SendDeathMessage</a>.  <b><c>INVALID_PLAYER_ID</c></b> is a valid killerid ID parameter in that function.<br />  <b>playerid</b> is the only one who can call the callback. (good to know for anti fake death)  </remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerDisconnect" syntax="OnPlayerDisconnect(playerid, reason)">
+			<attribute name="public"/>
+			<stacksize value="3"/>
+			<dependency name="cef_on_player_disconnect"/>
+			<param name="playerid">
+				The ID of the player that disconnected
+			</param>
+			<param name="reason">
+				The reason for the disconnection.  See table below
+			</param>
+			<summary>This callback is called when a player disconnects from the server.</summary>      <seealso name="OnPlayerConnect" />  <seealso name="OnIncomingConnection" />  <seealso name="OnPlayerFinishedDownloading" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>Some functions might not work correctly when used in this callback because the player is  already disconnected when the callback is called.  This means that you can't get unambiguous information  from functions like <a href="#GetPlayerIp">GetPlayerIp</a> and <a href="#GetPlayerPos">GetPlayerPos</a>.</remarks>  <remarks>  <b>Reasons:</b><br />  <ul>  <li><b><c>0</c></b> - timeout/Crash - the player's connection was lost.  Either their game crashed  or their network had a fault.</li>  <li><b><c>1</c></b> - quit - the player purposefully quit, either using the <b><c>/quit (/q)</c></b>  command or via the pause menu.</li>  <li><b><c>2</c></b> - kick/ban - the player was kicked or banned by the server.</li>  </ul>  </remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerEditAttachedObject" syntax="OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, fOffsetX, fOffsetY, fOffsetZ, rotationX, rotationY, rotationZ, scaleX, scaleY, scaleZ)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that ended edition mode
+			</param>
+			<param name="response">
+				<paraminfo>t_EDIT_RESPONSE </paraminfo>
+				<b><c>0</c></b> if they cancelled (ESC) or <b><c>1</c></b> if they clicked  the save icon
+			</param>
+			<param name="index">
+				The index of the attached object
+			</param>
+			<param name="modelid">
+				The model of the attached object that was edited
+			</param>
+			<param name="boneid">
+				The bone of the attached object that was edited
+			</param>
+			<param name="fOffsetX">
+				<paraminfo>Float </paraminfo>
+				The X offset for the attached object that was edited
+			</param>
+			<param name="fOffsetY">
+				<paraminfo>Float </paraminfo>
+				The Y offset for the attached object that was edited
+			</param>
+			<param name="fOffsetZ">
+				<paraminfo>Float </paraminfo>
+				The Z offset for the attached object that was edited
+			</param>
+			<param name="rotationX">
+				<paraminfo>Float </paraminfo>
+				The X rotation for the attached object that was edited
+			</param>
+			<param name="rotationY">
+				<paraminfo>Float </paraminfo>
+				The Y rotation for the attached object that was edited
+			</param>
+			<param name="rotationZ">
+				<paraminfo>Float </paraminfo>
+				The Z rotation for the attached object that was edited
+			</param>
+			<param name="scaleX">
+				<paraminfo>Float </paraminfo>
+				The X scale for the attached object that was edited
+			</param>
+			<param name="scaleY">
+				<paraminfo>Float </paraminfo>
+				The Y scale for the attached object that was edited
+			</param>
+			<param name="scaleZ">
+				<paraminfo>Float </paraminfo>
+				The Z scale for the attached object that was edited
+			</param>
+			<summary>This callback is called when a player ends attached object edition mode.</summary>                              <seealso name="EditAttachedObject" />  <seealso name="SetPlayerAttachedObject" />  <remarks>Editions should be discarded if response was <b><c>0</c></b> (cancelled).  This must be  done by storing the offsets etc.  in an array BEFORE using <a href="#EditAttachedObject">EditAttachedObject</a>.</remarks>  <returns>  <b><c>1</c></b> - Will prevent other scripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next script.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerEditObject" syntax="OnPlayerEditObject(playerid, playerobject, objectid, response, fX, fY, fZ, rotationX, rotationY, rotationZ)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that edited an object
+			</param>
+			<param name="playerobject">
+				<b><c>0</c></b> if it is a global object or <b><c>1</c></b> if it is a  playerobject
+			</param>
+			<param name="objectid">
+				The ID of the edited object
+			</param>
+			<param name="response">
+				<paraminfo>t_EDIT_RESPONSE </paraminfo>
+				The type of response
+			</param>
+			<param name="fX">
+				<paraminfo>Float </paraminfo>
+				The X offset for the object that was edited
+			</param>
+			<param name="fY">
+				<paraminfo>Float </paraminfo>
+				The Y offset for the object that was edited
+			</param>
+			<param name="fZ">
+				<paraminfo>Float </paraminfo>
+				The Z offset for the object that was edited
+			</param>
+			<param name="rotationX">
+				<paraminfo>Float </paraminfo>
+				The X rotation for the object that was edited
+			</param>
+			<param name="rotationY">
+				<paraminfo>Float </paraminfo>
+				The Y rotation for the object that was edited
+			</param>
+			<param name="rotationZ">
+				<paraminfo>Float </paraminfo>
+				The Z rotation for the object that was edited
+			</param>
+			<summary>This callback is called when a player finishes editing an object (<a href="#EditObject">EditObject</a>/<a  href="#EditPlayerObject">EditPlayerObject</a>).</summary>                      <seealso name="EditObject" />  <seealso name="CreateObject" />  <seealso name="DestroyObject" />  <seealso name="MoveObject" />  <remarks>When using <b><c>EDIT_RESPONSE_UPDATE</c></b> be aware that this callback will not be called  when releasing an edit in progress resulting in the last update of <b><c>EDIT_RESPONSE_UPDATE</c></b>  being out of sync of the objects current position.</remarks>  <returns>  <b><c>1</c></b> - Will prevent other scripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next script.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerEnterCheckpoint" syntax="OnPlayerEnterCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The player who entered the checkpoint
+			</param>
+			<summary>This callback is called when a player enters the checkpoint set for that player.</summary>    <seealso name="OnPlayerLeaveCheckpoint" />  <seealso name="OnPlayerEnterRaceCheckpoint" />  <seealso name="OnPlayerLeaveRaceCheckpoint" />  <seealso name="SetPlayerCheckpoint" />  <seealso name="DisablePlayerCheckpoint" />  <seealso name="IsPlayerInCheckpoint" />  <seealso name="SetPlayerRaceCheckpoint" />  <seealso name="DisablePlayerRaceCheckpoint" />  <seealso name="IsPlayerInRaceCheckpoint" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerEnterGangZone" syntax="OnPlayerEnterGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerEnterPlayerGangZone" syntax="OnPlayerEnterPlayerGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerEnterRaceCheckpoint" syntax="OnPlayerEnterRaceCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player who entered the race checkpoint
+			</param>
+			<summary>This callback is called when a player enters a race checkpoint.</summary>    <seealso name="OnPlayerEnterCheckpoint" />  <seealso name="OnPlayerLeaveCheckpoint" />  <seealso name="OnPlayerLeaveRaceCheckpoint" />  <seealso name="SetPlayerCheckpoint" />  <seealso name="DisablePlayerCheckpoint" />  <seealso name="IsPlayerInCheckpoint" />  <seealso name="SetPlayerRaceCheckpoint" />  <seealso name="DisablePlayerRaceCheckpoint" />  <seealso name="IsPlayerInRaceCheckpoint" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerEnterVehicle" syntax="OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				ID of the player who attempts to enter a vehicle
+			</param>
+			<param name="vehicleid">
+				ID of the vehicle the player is attempting to enter
+			</param>
+			<param name="ispassenger">
+				<b><c>0</c></b> if entering as driver. <b><c>1</c></b> if entering as passenger
+			</param>
+			<summary>This callback is called when a player <b><c>starts</c></b> to enter a vehicle, meaning the  player is not in vehicle yet at the time this callback is called.</summary>        <seealso name="OnPlayerExitVehicle" />  <seealso name="OnPlayerStateChange" />  <seealso name="PutPlayerInVehicle" />  <seealso name="GetPlayerVehicleSeat" />  <remarks>This callback is called when a player <b>BEGINS</b> to enter a vehicle, not when they HAVE  entered it.  See <a href="#OnPlayerStateChange">OnPlayerStateChange</a>. </remarks>  <remarks>This callback is still called if the player is denied entry to the vehicle (e.g.  it is  locked or full). </remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerExitVehicle" syntax="OnPlayerExitVehicle(playerid, vehicleid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that is exiting a vehicle
+			</param>
+			<param name="vehicleid">
+				The ID of the vehicle the player is exiting
+			</param>
+			<summary>This callback is called when a player <b>starts</b> to exit a vehicle.</summary>      <seealso name="OnPlayerEnterVehicle" />  <seealso name="OnPlayerStateChange" />  <seealso name="RemovePlayerFromVehicle" />  <seealso name="GetPlayerVehicleSeat" />  <remarks>Not called if the player falls off a bike or is removed from a vehicle by other means such  as using <a href="#SetPlayerPos">SetPlayerPos</a>.</remarks>  <remarks>You must use <a href="#OnPlayerStateChange">OnPlayerStateChange</a> and check if their old  state is <b><c>PLAYER_STATE_DRIVER</c></b> or <b><c>PLAYER_STATE_PASSENGER</c></b> and their new  state is <b><c>PLAYER_STATE_ONFOOT</c></b>.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerExitedMenu" syntax="OnPlayerExitedMenu(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that exited the menu
+			</param>
+			<summary>Called when a player exits a menu.</summary>    <seealso name="OnPlayerSelectedMenuRow" />  <seealso name="CreateMenu" />  <seealso name="DestroyMenu" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerFinishedDownloading" syntax="OnPlayerFinishedDownloading(playerid, virtualworld)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that finished downloading custom models
+			</param>
+			<param name="virtualworld">
+				The ID of the virtual world the player finished downloading custom models  for
+			</param>
+			<summary>This callback is called when a player finishes downloading custom models.  For more information  on how to add custom models to your server, see <a href="http://forum.sa-mp.com/showthread.php?t=644105">the  release thread</a> and <a href="http://forum.sa-mp.com/showthread.php?t=644123">this tutorial</a>.</summary>      <seealso name="OnPlayerConnect" />  <seealso name="OnPlayerDisconnect" />  <seealso name="OnIncomingConnection" />  <remarks>This callback is called every time a player changes virtual worlds, even if there are no  custom models present in that world.</remarks>  <returns>This callback does not handle returns.</returns> 
+		</member>
+		<member name="M:OnPlayerGiveDamage" syntax="OnPlayerGiveDamage(playerid, damagedid, amount, weaponid, bodypart)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that gave damage
+			</param>
+			<param name="damagedid">
+				The ID of the player that received damage
+			</param>
+			<param name="amount">
+				<paraminfo>Float </paraminfo>
+				The amount of health/armour damagedid has lost (combined)
+			</param>
+			<param name="weaponid">
+				The <a href="http://wiki.sa-mp.com/wiki/Weapons">reason</a> that caused the  damage
+			</param>
+			<param name="bodypart">
+				The body part that was hit. (NOTE: This parameter was added in <b>0.3z</b>.  Leave it out if using an older version!)
+			</param>
+			<summary>This callback is called when a player gives damage to another player.</summary>            <seealso name="OnPlayerTakeDamage" />  <remarks>  Keep in mind this function can be inaccurate in some cases.<br />  If you want to prevent certain players from damaging eachother, use <a href="#SetPlayerTeam">SetPlayerTeam</a>.<br  />  The weaponid will return <b><c>37</c></b> (flame thrower) from any fire sources (e.g.  molotov,  18)<br />  The weaponid will return <b><c>51</c></b> from any weapon that creates an explosion (e.g.  RPG,  grenade)<br />  <b>playerid</b> is the only one who can call the callback.<br />  The amount is always the maximum damage the weaponid can do, even when the health left is less  than that maximum damage.  So when a player has <b><c>100.0</c></b> health and gets shot with a Desert  Eagle which has a damage value of <b><c>46.2</c></b>, it takes 3 shots to kill that player.  All  3 shots will show an amount of <b><c>46.2</c></b>, even though when the last shot hits, the player  only has <b><c>7.6</c></b> health left.  </remarks>  <returns>  <b><c>1</c></b> - Callback will not be called in other filterscripts.<br />  <b><c>0</c></b> - Allows this callback to be called in other filterscripts.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerGiveDamageActor" syntax="OnPlayerGiveDamageActor(playerid, damaged_actorid, amount, weaponid, bodypart)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that gave damage
+			</param>
+			<param name="damaged_actorid">
+				The ID of the actor that received damage
+			</param>
+			<param name="amount">
+				<paraminfo>Float </paraminfo>
+				The amount of health/armour damaged_actorid has lost
+			</param>
+			<param name="weaponid">
+				The reason that caused the damage
+			</param>
+			<param name="bodypart">
+				The body part that was hit
+			</param>
+			<summary>This callback is called when a player gives damage to an actor.</summary>            <seealso name="CreateActor" />  <seealso name="SetActorInvulnerable" />  <seealso name="SetActorHealth" />  <seealso name="GetActorHealth" />  <seealso name="IsActorInvulnerable" />  <seealso name="IsValidActor" />  <seealso name="OnActorStreamOut" />  <seealso name="OnPlayerStreamIn" />  <remarks>This function does not get called if the actor is set invulnerable (WHICH IS BY DEFAULT).  See <a href="#SetActorInvulnerable">SetActorInvulnerable</a>.</remarks>  <returns>  <b><c>1</c></b> - Callback will not be called in other filterscripts.<br />  <b><c>0</c></b> - Allows this callback to be called in other filterscripts.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerInteriorChange" syntax="OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The playerid who changed interior
+			</param>
+			<param name="newinteriorid">
+				The interior the player is now in
+			</param>
+			<param name="oldinteriorid">
+				The interior the player was in before
+			</param>
+			<summary>Called when a player changes interior.  Can be triggered by SetPlayerInterior or when a  player enter/exits a building.</summary>        <seealso name="SetPlayerInterior" />  <seealso name="GetPlayerInterior" />  <seealso name="LinkVehicleToInterior" />  <seealso name="OnPlayerStateChange" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerKeyStateChange" syntax="OnPlayerKeyStateChange(playerid, newkeys, oldkeys)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that pressed or released a key
+			</param>
+			<param name="newkeys">
+				<paraminfo>t_KEY </paraminfo>
+				A map (bitmask) of the keys currently held - see <a href="http://wiki.sa-mp.com/wiki/Keys">here</a>
+			</param>
+			<param name="oldkeys">
+				<paraminfo>t_KEY </paraminfo>
+				A map (bitmask) of the keys held prior to the current change - see  <a href="http://wiki.sa-mp.com/wiki/Keys">here</a>
+			</param>
+			<summary>This callback is called when the state of any supported key is changed (pressed/released).  Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).</summary>        <seealso name="GetPlayerKeys" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>  Useful macros:<br />  <code>  // HOLDING(keys)<br />  #define HOLDING(%0) ((newkeys &amp; (%0)) == (%0))<br />  <br />  // PRESSED(keys)<br />  #define PRESSED(%0) (((newkeys &amp; (%0)) == (%0)) &amp;&amp; ((oldkeys &amp; (%0)) != (%0)))<br  />  <br />  // PRESSING(keyVariable, keys)<br />  #define PRESSING(%0,%1) (%0 &amp; (%1))<br />  <br />  // RELEASED(keys)<br />  #define RELEASED(%0) (((newkeys &amp; (%0)) != (%0)) &amp;&amp; ((oldkeys &amp; (%0)) == (%0)))<br  />  </code>  </remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerLeaveCheckpoint" syntax="OnPlayerLeaveCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that left their checkpoint
+			</param>
+			<summary>This callback is called when a player leaves the checkpoint set for them by  <a href="#SetPlayerCheckpoint">SetPlayerCheckpoint</a>.  Only one checkpoint can be set at a time.</summary>    <seealso name="OnPlayerEnterCheckpoint" />  <seealso name="OnPlayerEnterRaceCheckpoint" />  <seealso name="OnPlayerLeaveRaceCheckpoint" />  <seealso name="SetPlayerCheckpoint" />  <seealso name="DisablePlayerCheckpoint" />  <seealso name="IsPlayerInCheckpoint" />  <seealso name="SetPlayerRaceCheckpoint" />  <seealso name="DisablePlayerRaceCheckpoint" />  <seealso name="IsPlayerInRaceCheckpoint" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerLeaveGangZone" syntax="OnPlayerLeaveGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerLeavePlayerGangZone" syntax="OnPlayerLeavePlayerGangZone(playerid, zoneid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="zoneid">
+			</param>
+		</member>
+		<member name="M:OnPlayerLeaveRaceCheckpoint" syntax="OnPlayerLeaveRaceCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that left the race checkpoint
+			</param>
+			<summary>This callback is called when a player leaves the race checkpoint.</summary>    <seealso name="OnPlayerEnterCheckpoint" />  <seealso name="OnPlayerLeaveCheckpoint" />  <seealso name="OnPlayerEnterRaceCheckpoint" />  <seealso name="SetPlayerCheckpoint" />  <seealso name="DisablePlayerCheckpoint" />  <seealso name="IsPlayerInCheckpoint" />  <seealso name="SetPlayerRaceCheckpoint" />  <seealso name="DisablePlayerRaceCheckpoint" />  <seealso name="IsPlayerInRaceCheckpoint" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerObjectMoved" syntax="OnPlayerObjectMoved(playerid, objectid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The playerid the object is assigned to
+			</param>
+			<param name="objectid">
+				The ID of the player object that was moved
+			</param>
+			<summary>This callback is called when a player object is moved after <a href="#MovePlayerObject">MovePlayerObject</a>  (when it stops moving).</summary>      <seealso name="OnObjectMoved" />  <seealso name="MovePlayerObject" />  <seealso name="IsPlayerObjectMoving" />  <seealso name="StopPlayerObject" />  <remarks>This callback can also be called for NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerPickUpPickup" syntax="OnPlayerPickUpPickup(playerid, pickupid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePickup
+			</param>
+			<summary>Called when a player picks up a pickup created with <a href="#CreatePickup">CreatePickup</a>.</summary>      <seealso name="CreatePickup" />  <seealso name="DestroyPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerPickUpPlayerPickup" syntax="OnPlayerPickUpPlayerPickup(playerid, pickupid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePlayerPickup
+			</param>
+			<summary>Called when a player picks up a pickup created with <a href="#CreatePickup">CreatePlayerPickup</a>.</summary>      <seealso name="CreatePlayerPickup" />  <seealso name="DestroyPlayerPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerPickupStreamIn" syntax="OnPlayerPickupStreamIn(pickupid, playerid)">
+			<stacksize value="1"/>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePickup
+			</param>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<summary>Called when a pickup enters the visual range of a player.</summary>      <seealso name="CreatePickup" />  <seealso name="DestroyPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerPickupStreamOut" syntax="OnPlayerPickupStreamOut(pickupid, playerid)">
+			<stacksize value="1"/>
+			<param name="pickupid">
+				The ID of the pickup, returned by CreatePickup
+			</param>
+			<param name="playerid">
+				The ID of the player that picked up the pickup
+			</param>
+			<summary>Called when a pickup leaves the visual range of a player.</summary>      <seealso name="CreatePickup" />  <seealso name="DestroyPickup" />  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerRequestClass" syntax="OnPlayerRequestClass(playerid, classid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that changed class
+			</param>
+			<param name="classid">
+				The ID of the current class being viewed (returned by <a href="#AddPlayerClass">AddPlayerClass</a>)
+			</param>
+			<summary>Called when a player changes class at class selection (and when class selection first appears).</summary>      <seealso name="OnPlayerRequestSpawn" />  <seealso name="AddPlayerClass" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>This callback is also called when a player presses <b>F4</b>.</remarks>  <returns>  Returning <b><c>0</c></b> in this callback will prevent the player from spawning.  The player can  be forced to spawn when <a href="#SpawnPlayer">SpawnPlayer</a> is used.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerRequestDownload" syntax="OnPlayerRequestDownload(playerid, type, crc)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="type">
+				<paraminfo>t_DOWNLOAD_REQUEST </paraminfo>
+			</param>
+			<param name="crc">
+			</param>
+		</member>
+		<member name="M:OnPlayerRequestSpawn" syntax="OnPlayerRequestSpawn(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that requested to spawn
+			</param>
+			<summary>Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking  the 'Spawn' button.</summary>    <seealso name="OnPlayerSpawn" />  <seealso name="OnPlayerRequestClass" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>To prevent players from spawning with certain classes, the last viewed class must be saved  in a variable in <a href="#OnPlayerRequestClass">OnPlayerRequestClass</a>.</remarks>  <returns>  Returning <b><c>0</c></b> in this callback will prevent the player from spawning.<br />  It is always called first in filterscripts so returning <b><c>0</c></b> there also blocks other  scripts from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerSelectObject" syntax="OnPlayerSelectObject(playerid, type, objectid, modelid, fX, fY, fZ)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that selected an object
+			</param>
+			<param name="type">
+				<paraminfo>t_SELECT_OBJECT </paraminfo>
+				The type of selection
+			</param>
+			<param name="objectid">
+				The ID of the selected object
+			</param>
+			<param name="modelid">
+				The model ID of the selected object
+			</param>
+			<param name="fX">
+				<paraminfo>Float </paraminfo>
+				The X position of the selected object
+			</param>
+			<param name="fY">
+				<paraminfo>Float </paraminfo>
+				The Y position of the selected object
+			</param>
+			<param name="fZ">
+				<paraminfo>Float </paraminfo>
+				The Z position of the selected object
+			</param>
+			<summary>This callback is called when a player selects an object after <a href="#SelectObject">SelectObject</a>  has been used.</summary>                <seealso name="SelectObject" />  <returns>  <b><c>1</c></b> - Will prevent other scripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next script.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerSelectedMenuRow" syntax="OnPlayerSelectedMenuRow(playerid, row)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that selected a menu item
+			</param>
+			<param name="row">
+				The ID of the row that was selected.  The first row is ID <b><c>0</c></b>
+			</param>
+			<summary>This callback is called when a player selects an item from a menu (<a href="#ShowMenuForPlayer">ShowMenuForPlayer</a>).</summary>      <seealso name="OnPlayerExitedMenu" />  <seealso name="OnDialogResponse" />  <seealso name="CreateMenu" />  <seealso name="DestroyMenu" />  <seealso name="AddMenuItem" />  <seealso name="ShowMenuForPlayer" />  <seealso name="HideMenuForPlayer" />  <remarks>The menu ID is not passed to this callback. <a href="#GetPlayerMenu">GetPlayerMenu</a> must  be used to determine which menu the player selected an item on.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
+		</member>
+		<member name="M:OnPlayerSpawn" syntax="OnPlayerSpawn(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that spawned
+			</param>
+			<summary>This callback is called when a player spawns.(i.e.  after caling <a href="#SpawnPlayer">SpawnPlayer</a>  function).</summary>    <seealso name="OnPlayerDeath" />  <seealso name="OnVehicleSpawn" />  <seealso name="SpawnPlayer" />  <seealso name="AddPlayerClass" />  <seealso name="SetSpawnInfo" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>The game sometimes deducts $100 from players after spawn.</remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerStateChange" syntax="OnPlayerStateChange(playerid, newstate, oldstate)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that changed state
+			</param>
+			<param name="newstate">
+				<paraminfo>t_PLAYER_STATE </paraminfo>
+				The player's new state
+			</param>
+			<param name="oldstate">
+				<paraminfo>t_PLAYER_STATE </paraminfo>
+				The player's previous state
+			</param>
+			<summary>This callback is called when a player changes state.  For example, when a player changes  from being the driver of a vehicle to being on-foot.</summary>        <seealso name="OnPlayerInteriorChange" />  <seealso name="GetPlayerState" />  <seealso name="GetPlayerSpecialAction" />  <seealso name="SetPlayerSpecialAction" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>  <b>States:</b><br />  <ul>  <li><b><c>PLAYER_STATE_NONE</c></b> - empty (while initializing)</li>  <li><b><c>PLAYER_STATE_ONFOOT</c></b> - player is on foot</li>  <li><b><c>PLAYER_STATE_DRIVER</c></b> - player is the driver of a vehicle</li>  <li><b><c>PLAYER_STATE_PASSENGER</c></b> - player is passenger of a vehicle</li>  <li><b><c>PLAYER_STATE_WASTED</c></b> - player is dead or on class selection</li>  <li><b><c>PLAYER_STATE_SPAWNED</c></b> - player is spawned</li>  <li><b><c>PLAYER_STATE_SPECTATING</c></b> - player is spectating</li>  <li><b><c>PLAYER_STATE_EXIT_VEHICLE</c></b> - player exits a vehicle</li>  <li><b><c>PLAYER_STATE_ENTER_VEHICLE_DRIVER</c></b> - player enters a vehicle as driver</li>  <li><b><c>PLAYER_STATE_ENTER_VEHICLE_PASSENGER</c></b> - player enters a vehicle as passenger  </li>  </ul>  </remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerStreamIn" syntax="OnPlayerStreamIn(playerid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player who has been streamed
+			</param>
+			<param name="forplayerid">
+				The ID of the player that streamed the other player in
+			</param>
+			<summary>This callback is called when a player is streamed by some other player's client.</summary>      <seealso name="OnPlayerStreamOut" />  <seealso name="OnActorStreamIn" />  <seealso name="OnVehicleStreamIn" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerStreamOut" syntax="OnPlayerStreamOut(playerid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The player who has been destreamed
+			</param>
+			<param name="forplayerid">
+				The player who has destreamed the other player
+			</param>
+			<summary>This callback is called when a player is streamed out from some other player's client.</summary>      <seealso name="OnPlayerStreamIn" />  <seealso name="OnActorStreamOut" />  <seealso name="OnVehicleStreamOut" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerTakeDamage" syntax="OnPlayerTakeDamage(playerid, issuerid, amount, weaponid, bodypart)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that took damage
+			</param>
+			<param name="issuerid">
+				The ID of the player that caused the damage. <b><c>INVALID_PLAYER_ID</c></b>  if self-inflicted
+			</param>
+			<param name="amount">
+				<paraminfo>Float </paraminfo>
+				The amount of damage the player took (health and armour combined)
+			</param>
+			<param name="weaponid">
+				The ID of the <a href="http://wiki.sa-mp.com/wiki/Weapons">weapon/reason</a>  for the damage
+			</param>
+			<param name="bodypart">
+				The body part that was hit. (NOTE: This parameter was added in <b>0.3z</b>.  Leave it out if using an older version!)
+			</param>
+			<summary>This callback is called when a player takes damage.</summary>            <seealso name="OnPlayerGiveDamage" />  <seealso name="OnPlayerWeaponShot" />  <remarks><a href="#GetPlayerHealth">GetPlayerHealth</a> and <a href="#GetPlayerArmour">GetPlayerArmour</a>  will return the old amounts of the player before this callback. </remarks>  <remarks>  The weaponid will return <b><c>37</c></b> (flame thrower) from any fire sources (e.g.  molotov,  <b><c>18</c></b>).<br />  The weaponid will return <b><c>51</c></b> from any weapon that creates an explosion (e.g.  RPG,  grenade)<br />  <b>playerid</b> is the only one who can call the callback.<br />  The amount is always the maximum damage the weaponid can do, even when the health left is less  than that maximum damage.  So when a player has <b><c>100.0</c></b> health and gets shot with a Desert  Eagle which has a damage value of <b><c>46.2</c></b>, it takes 3 shots to kill that player.  All  3 shots will show an amount of <b><c>46.2</c></b>, even though when the last shot hits, the player  only has <b><c>7.6</c></b> health left.  </remarks>  <returns>  <b><c>1</c></b> - Callback will not be called in other filterscripts.<br />  <b><c>0</c></b> - Allows this callback to be called in other filterscripts.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerText" syntax="OnPlayerText(playerid, text[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player who typed the text
+			</param>
+			<param name="text">
+				<paraminfo> [] </paraminfo>
+				The text the player typed
+			</param>
+			<summary>Called when a player sends a chat message.</summary>      <seealso name="OnPlayerCommandText" />  <seealso name="SendPlayerMessageToPlayer" />  <seealso name="SendPlayerMessageToAll" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  Returning <b><c>0</c></b> in this callback will stop the text from being sent to all players.<br  />  It is always called first in filterscripts so returning <b><c>0</c></b> there blocks other scripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnPlayerUpdate" syntax="OnPlayerUpdate(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				ID of the player sending an update packet
+			</param>
+			<summary>This callback is called every time a client/player updates the server with their status.  It is often used to create custom callbacks for client updates that aren't actively tracked by the  server, such as health or armor updates or players switching weapons.</summary>    <remarks>This callback can also be called by NPC.</remarks>  <remarks>This callback is called, on average, 30 times per second, per player; only use it when you  know what it's meant for (or more importantly what it's NOT meant for). </remarks>  <remarks>The frequency with which this callback is called for each player varies, depending on what  the player is doing.  Driving or shooting will trigger a lot more updates than idling. </remarks>  <returns>  <b><c>0</c></b> - Update from this player will not be replicated to other clients.<br />  <b><c>1</c></b> - Indicates that this update can be processed normally and sent to other players.<br  />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnPlayerWeaponShot" syntax="OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, fX, fY, fZ)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that shot a weapon
+			</param>
+			<param name="weaponid">
+				The ID of the <a href="http://wiki.sa-mp.com/wiki/Weapons">weapon</a> shot  by the player
+			</param>
+			<param name="hittype">
+				<paraminfo>t_BULLET_HIT_TYPE </paraminfo>
+				The type of thing the shot hit (none, player, vehicle, or (player)object)
+			</param>
+			<param name="hitid">
+				The ID of the player, vehicle or object that was hit
+			</param>
+			<param name="fX">
+				<paraminfo>Float </paraminfo>
+				The X coordinate that the shot hit
+			</param>
+			<param name="fY">
+				<paraminfo>Float </paraminfo>
+				The Y coordinate that the shot hit
+			</param>
+			<param name="fZ">
+				<paraminfo>Float </paraminfo>
+				The Z coordinate that the shot hit
+			</param>
+			<summary>This callback is called when a player fires a shot from a weapon.  Only bullet weapons are  supported.  Only <b>passenger</b> drive-by is supported (not driver drive-by, and not sea sparrow  / hunter shots).</summary>                <seealso name="OnPlayerGiveDamage" />  <seealso name="GetPlayerLastShotVectors" />  <remarks>  <li><b><c>BULLET_HIT_TYPE_NONE(0)</c></b></li>  <li><b><c>BULLET_HIT_TYPE_PLAYER(1)</c></b></li>  <li><b><c>BULLET_HIT_TYPE_VEHICLE(2)</c></b></li>  <li><b><c>BULLET_HIT_TYPE_OBJECT(3)</c></b></li>  <li><b><c>BULLET_HIT_TYPE_PLAYER_OBJECT(4)</c></b></li>  </remarks>  <remarks><b><c>BULLET_HIT_TYPE_PLAYER</c></b> is also called for NPCs.  Actors are ignored by this  callback and detects as <b><c>BULLET_HIT_TYPE_NONE</c></b>.</remarks>  <remarks>This callback is only called when lag compensation is <b>enabled</b>. </remarks>  <remarks>  If hittype is:<br />  <ul>  <li>- <b><c>BULLET_HIT_TYPE_NONE</c></b>: the fX, fY and fZ parameters are normal coordinates,  will give 0.0 for coordinates if nothing was hit (e.g.  far object that the bullet can't reach);</li>  <li>- Others: the fX, fY and fZ are offsets relative to the hitid.</li>  </ul>  </remarks>  <remarks>  Isn't called if you fired in vehicle as driver or if you are looking behind with the aim enabled  (shooting in air).<br />  It is called as <b><c>BULLET_HIT_TYPE_VEHICLE</c></b> with the correct hitid (the hit player's  vehicleid) if you are shooting a player which is in a vehicle.  It won't be called as <b><c>BULLET_HIT_TYPE_PLAYER</c></b>  at all.<br />  </remarks>  <remarks>  </remarks>  <remarks><a href="#GetPlayerLastShotVectors">GetPlayerLastShotVectors</a> can be used in this callback  for more detailed bullet vector information.</remarks>  <returns>  <b><c>0</c></b> - Prevent the bullet from causing damage.<br />  <b><c>1</c></b> - Allow the bullet to cause damage.<br />  It is always called first in filterscripts so returning <b><c>0</c></b> there also blocks other  scripts from seeing it.  </returns> 
+		</member>
+		<member name="M:OnRconCommand" syntax="OnRconCommand(cmd[])">
+			<stacksize value="1"/>
+			<param name="cmd">
+				<paraminfo> [] </paraminfo>
+				A string containing the command that was typed, as well as any passed parameters
+			</param>
+			<summary>This callback is called when a command is sent through the server console, remote RCON,  or via the in-game "/rcon command".</summary>    <seealso name="IsPlayerAdmin" />  <seealso name="OnRconLoginAttempt" />  <remarks>You will need to include this callback in a loaded filterscript for it to work in the gamemode!</remarks>  <remarks>"/rcon" is not included in "cmd" when a player types a command. </remarks>  <remarks>If you use the <a href="#print">print</a> function here, it will send a message to the player  who typed the command in-game as well as the log.</remarks>  <remarks>This callback is not called when the player is not logged in as RCON admin. </remarks>  <remarks>When the player is not logged in as RCON admin and uses <b>/rcon login</b>, this callback  will not be called and <a href="#OnRconLoginAttempt">OnRconLoginAttempt</a> is called instead.  However,  when the player is logged in as RCON admin, the use of this command will call this callback. </remarks>  <returns>  <b><c>0</c></b> if the command was not processed, it will be passed to another script or <b><c>1</c></b>  if the command was processed, will not be passed to other scripts.<br />  It is always called first in filterscripts so returning <b><c>1</c></b> there blocks gamemode from  seeing it.  </returns> 
+		</member>
+		<member name="M:OnRconLoginAttempt" syntax="OnRconLoginAttempt(ip[], password[], success)">
+			<stacksize value="1"/>
+			<param name="ip">
+				<paraminfo> [] </paraminfo>
+				The IP of the player that tried to log in to RCON
+			</param>
+			<param name="password">
+				<paraminfo> [] </paraminfo>
+				The password used to login with
+			</param>
+			<param name="success">
+				<b><c>0</c></b> if the password was incorrect or <b><c>1</c></b> if it was  correct
+			</param>
+			<summary>This callback is called when someone attempts to log in to RCON in-game; successful or not.</summary>        <seealso name="OnRconCommand" />  <seealso name="IsPlayerAdmin" />  <seealso name="SendRconCommand" />  <remarks>This callback is only called when /rcon login is used in-game. </remarks>  <remarks>This callback is only called when the player is not yet logged in.  When the player is logged  in, <a href="#OnRconCommand">OnRconCommand</a> is called instead.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnScriptCash" syntax="OnScriptCash(playerid, amount, source)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player who got cash from the game
+			</param>
+			<param name="amount">
+				The amount of cash given
+			</param>
+			<param name="source">
+				Where the money came from
+			</param>
+			<summary>This callback is called when a SendClientCheck request comletes</summary>        <remarks>Doesn't work</remarks> 
+		</member>
+		<member name="M:OnTrailerUpdate" syntax="OnTrailerUpdate(playerid, vehicleid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player who sent a trailer update
+			</param>
+			<param name="vehicleid">
+				The Trailer being updated
+			</param>
+			<summary>This callback is called when a player sent a trailer update.</summary>      <seealso name="OnUnoccupiedVehicleUpdate" />  <seealso name="GetVehicleTrailer" />  <seealso name="IsTrailerAttachedToVehicle" />  <seealso name="AttachTrailerToVehicle" />  <seealso name="DetachTrailerFromVehicle" />  <remarks>This callback is called very frequently per second per trailer.  You should refrain from  implementing intensive calculations or intensive file writing/reading operations in this callback.  </remarks>  <returns>  <b><c>0</c></b> - Cancels any trailer updates from being sent to other players.  Update is still  sent to the updating player.<br />  <b><c>1</c></b> - Processes the trailer update as normal and synchronizes it between all players.<br  />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnUnoccupiedVehicleUpdate" syntax="OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that's position was updated
+			</param>
+			<param name="playerid">
+				The ID of the player that sent a vehicle position sync update
+			</param>
+			<param name="passenger_seat">
+				The ID of the seat if the player is a passenger.  0=not in vehicle,  1=front passenger, 2=backleft 3=backright 4+ is for coach/bus etc.  with many passenger seats
+			</param>
+			<param name="new_x">
+				<paraminfo>Float </paraminfo>
+				The new X coordinate of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<param name="new_y">
+				<paraminfo>Float </paraminfo>
+				The new Y coordinate of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<param name="new_z">
+				<paraminfo>Float </paraminfo>
+				The new Z coordinate of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<param name="vel_x">
+				<paraminfo>Float </paraminfo>
+				The new X velocity of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<param name="vel_y">
+				<paraminfo>Float </paraminfo>
+				The new Y velocity of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<param name="vel_z">
+				<paraminfo>Float </paraminfo>
+				The new Z velocity of the vehicle.</b>  Leave it out if using an earlier version
+			</param>
+			<summary>This callback is called when a player's client updates/syncs the position of a vehicle they're  not driving.  This can happen outside of the vehicle or when the player is a passenger of a vehicle  that has no driver.</summary>                    <seealso name="OnTrailerUpdate" />  <remarks>This callback is called very frequently per second per unoccupied vehicle.  You should refrain  from implementing intensive calculations or intensive file writing/reading operations in this callback.</remarks>  <remarks><a href="#GetVehiclePos">GetVehiclePos</a> will return the old coordinates of the vehicle  before this update.</remarks>  <returns>  Returning <b><c>0</c></b> in this callback will stop the vehicle's position being synced to other  players.  Update is still sent to the updating player.  Useful for combating vehicle teleport hacks.<br  />  It is always called first in filterscripts so returning <b><c>0</c></b> there also blocks other  scripts from seeing it.  </returns> 
+		</member>
+		<member name="M:OnVehicleDamageStatusUpdate" syntax="OnVehicleDamageStatusUpdate(vehicleid, playerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that was changed its damage status
+			</param>
+			<param name="playerid">
+				The ID of the player who synced the change in the damage status (who had the  car damaged or repaired)
+			</param>
+			<summary>This callback is called when a vehicle element such as doors, tires, panels, or lights change  their damage status.</summary>      <seealso name="GetVehicleDamageStatus" />  <seealso name="UpdateVehicleDamageStatus" />  <remarks>This does not include vehicle health changes</remarks>  <returns>  <b><c>1</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.<br />  </returns> 
+		</member>
+		<member name="M:OnVehicleDeath" syntax="OnVehicleDeath(vehicleid, killerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that was destroyed
+			</param>
+			<param name="killerid">
+				The ID of the player that reported (synced) the vehicle's destruction (name  is misleading).  Generally the driver or a passenger (if any) or the closest player
+			</param>
+			<summary>This callback is called when a vehicle is destroyed - either by exploding or becoming submerged  in water.</summary>      <seealso name="OnVehicleSpawn" />  <seealso name="SetVehicleHealth" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>This callback will also be called when a vehicle enters water, but the vehicle can be saved  from destruction by teleportation or driving out (if only partially submerged).  The callback won't  be called a second time, and the vehicle may disappear when the driver exits, or after a short time.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnVehicleMod" syntax="OnVehicleMod(playerid, vehicleid, component)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the driver of the vehicle
+			</param>
+			<param name="vehicleid">
+				The ID of the vehicle which is modded
+			</param>
+			<param name="component">
+				The ID of the component which was added to the vehicle
+			</param>
+			<summary>This callback is called when a vehicle is modded.</summary>        <seealso name="AddVehicleComponent" />  <seealso name="OnEnterExitModShop" />  <seealso name="OnVehiclePaintjob" />  <seealso name="OnVehicleRespray" />  <remarks>This callback is NOT called by <a href="#AddVehicleComponent">AddVehicleComponent</a>.</remarks>  <returns>  Return <b><c>0</c></b> to desync the mod (or an invalid mod) from propagating and / or crashing  players.<br />  It is always called first in gamemode so returning <b><c>0</c></b> there also blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnVehiclePaintjob" syntax="OnVehiclePaintjob(playerid, vehicleid, paintjob)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that changed the paintjob of their vehicle
+			</param>
+			<param name="vehicleid">
+				The ID of the vehicle that had its paintjob changed
+			</param>
+			<param name="paintjob">
+				The ID of the new paintjob
+			</param>
+			<summary>Called when a player previews a vehicle paintjob inside a mod shop.  Watch out, this callback  is not called when the player buys the paintjob.</summary>        <seealso name="ChangeVehiclePaintjob" />  <seealso name="ChangeVehicleColours" />  <seealso name="OnVehicleRespray" />  <seealso name="OnVehicleMod" />  <remarks>This callback is not called by <a href="#ChangeVehiclePaintjob">ChangeVehiclePaintjob</a>.</remarks>  <returns>  This callback does not handle returns.  Returning <b><c>0</c></b> won't deny the paintjob change.<br  />  It is always called first in gamemode so returning <b><c>0</c></b> there blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnVehicleRespray" syntax="OnVehicleRespray(playerid, vehicleid, colour1, colour2)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that is driving the vehicle
+			</param>
+			<param name="vehicleid">
+				The ID of the vehicle that was resprayed
+			</param>
+			<param name="colour1">
+				The colour that the vehicle's primary colour was changed to
+			</param>
+			<param name="colour2">
+				The colour that the vehicle's secondary colour was changed to
+			</param>
+			<summary>This callback is called when a player exits a mod shop, even if the colours weren't changed.  Watch out, the name is ambiguous, Pay 'n' Spray shops don't call this callback.</summary>          <seealso name="ChangeVehicleColours" />  <seealso name="ChangeVehiclePaintjob" />  <seealso name="OnVehiclePaintjob" />  <seealso name="OnVehicleMod" />  <seealso name="OnEnterExitModShop" />  <remarks>Previewing a component inside a mod shop might call this callback.</remarks>  <remarks>This callback is not called by <a href="#ChangeVehicleColor">ChangeVehicleColor</a>.</remarks>  <returns>  Returning <b><c>0</c></b> in this callback will deny the colour change.  Returning <b><c>1</c></b>  will allow it.  This can be used to prevent hackers from changing vehicle colours using cheats.<br  />  It is always called first in gamemode so returning <b><c>0</c></b> there also blocks other filterscripts  from seeing it.  </returns> 
+		</member>
+		<member name="M:OnVehicleSirenStateChange" syntax="OnVehicleSirenStateChange(playerid, vehicleid, newstate)">
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player that toggled the siren (driver)
+			</param>
+			<param name="vehicleid">
+				The ID of the vehicle of which the siren was toggled for
+			</param>
+			<param name="newstate">
+				<b><c>0</c></b> if siren was turned off, <b><c>1</c></b> if siren was turned  on
+			</param>
+			<summary>This callback is called when a vehicle's siren is toggled.</summary>        <seealso name="GetVehicleParamsSirenState" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>This callback is only called when a vehicle's siren is toggled on or off, NOT when the alternate  siren is in use (holding horn).</remarks>  <returns>  <b><c>1</c></b> - Will prevent gamemode from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the gamemode.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnVehicleSpawn" syntax="OnVehicleSpawn(vehicleid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that spawned
+			</param>
+			<summary>This callback is called when a vehicle <b>re</b>spawns.</summary>    <seealso name="OnVehicleDeath" />  <seealso name="OnPlayerSpawn" />  <seealso name="SetVehicleToRespawn" />  <seealso name="CreateVehicle" />  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnVehicleStreamIn" syntax="OnVehicleStreamIn(vehicleid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that streamed in for the player
+			</param>
+			<param name="forplayerid">
+				The ID of the player who the vehicle streamed in for
+			</param>
+			<summary>Called when a vehicle is streamed to a player's client.</summary>      <seealso name="OnVehicleStreamOut" />  <seealso name="OnPlayerStreamIn" />  <seealso name="OnPlayerStreamOut" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:OnVehicleStreamOut" syntax="OnVehicleStreamOut(vehicleid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+				The ID of the vehicle that streamed out
+			</param>
+			<param name="forplayerid">
+				The ID of the player who is no longer streaming the vehicle
+			</param>
+			<summary>This callback is called when a vehicle is streamed out for a player's client (it's so far  away that they can't see it).</summary>      <seealso name="OnVehicleStreamIn" />  <seealso name="OnPlayerStreamIn" />  <seealso name="OnPlayerStreamOut" />  <remarks>This callback can also be called by NPC.</remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
+		</member>
+		<member name="M:SetPickupForPlayer" syntax="SetPickupForPlayer(playerid, id, model, type, x, y, z)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="id">
+			</param>
+			<param name="model">
+			</param>
+			<param name="type">
+			</param>
+			<param name="x">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="y">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="z">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<library>omp_pickup</library> 
+		</member>
+		<member name="M:SetPlayer3DTextLabelVirtualWorld" syntax="SetPlayer3DTextLabelVirtualWorld(playerid, textid, virtualWorld)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="textid">
+				<paraminfo>PlayerText3D </paraminfo>
+			</param>
+			<param name="virtualWorld">
+			</param>
+			<library>omp_textlabel</library> 
+		</member>
+		<member name="M:SetServerRuleFlags" syntax="SetServerRuleFlags(rule[], flags)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="rule">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="flags">
+				<paraminfo>E_SERVER_RULE_FLAGS </paraminfo>
+			</param>
+			<library>omp_core</library> 
+		</member>
+		<member name="M:SetTeamCount" syntax="SetTeamCount(count)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="count">
+				Number of teams the gamemode knows
+			</param>
+			<library>omp_class</library>  <summary>This function is used to change the amount of teams used in the gamemode.  It has no obvious  way of being used, but can help to indicate the number of teams used for better (more effective)  internal handling.  This function should only be used in the <a href="#OnGameModeInit">OnGameModeInit</a>  callback.  Important: You can pass 2 billion here if you like, this function has no effect at all.</summary>    <seealso name="GetPlayerTeam" />  <seealso name="SetPlayerTeam" /> 
+		</member>
+		<member name="M:SetVehicleBeenOccupied" syntax="SetVehicleBeenOccupied(vehicleid, occupied)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="occupied">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:SetVehicleDead" syntax="SetVehicleDead(vehicleid, dead)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="dead">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:SetVehicleOccupiedTick" syntax="SetVehicleOccupiedTick(vehicleid, ticks)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="ticks">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:SetVehicleRespawnTick" syntax="SetVehicleRespawnTick(vehicleid, ticks)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="ticks">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:ShowVehicle" syntax="ShowVehicle(vehicleid)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<library>omp_vehicle</library> 
+		</member>
+		<member name="M:StartRecordingPlayerData" syntax="StartRecordingPlayerData(playerid, recordType, recordFile[])">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="playerid">
+				The ID of the player to record
+			</param>
+			<param name="recordType">
+				<paraminfo>t_PLAYER_RECORDING_TYPE </paraminfo>
+				The type of recording
+			</param>
+			<param name="recordFile">
+				<paraminfo> [] </paraminfo>
+				The name of the file which will hold the recorded data.  It will be saved  in the scriptfiles directory, with an automatically added .rec extension, you will need to move the  file to npcmodes/recordings to use for playback
+			</param>
+			<library>omp_player</library>  <summary>Starts recording a player's movements to a file, which can then be reproduced by an NPC.</summary>        <seealso name="StopRecordingPlayerData" /> 
+		</member>
+		<member name="M:StopRecordingPlayerData" syntax="StopRecordingPlayerData(playerid)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="playerid">
+				The player you want to stop the recordings of
+			</param>
+			<library>omp_player</library>  <summary>Stops all the recordings that had been started with <a href="#StartRecordingPlayerData">StartRecordingPlayerData</a>  for a specific player.</summary>    <seealso name="StartRecordingPlayerData" /> 
+		</member>
+		<member name="M:_@BULLET_HIT_TYPE" syntax="_@BULLET_HIT_TYPE()">
+			<tagname value="t_BULLET_HIT_TYPE"/>
+			<stacksize value="1"/>
+			<dependency name="__BULLET_HIT_TYPE"/>
+		</member>
+		<member name="M:_@CAMERA_MOVE" syntax="_@CAMERA_MOVE()">
+			<tagname value="CAMERA_MOVE"/>
+			<stacksize value="1"/>
+		</member>
+		<member name="M:_@CAM_MODE" syntax="_@CAM_MODE()">
+			<tagname value="t_CAM_MODE"/>
+			<stacksize value="1"/>
+			<dependency name="__CAM_MODE"/>
+		</member>
+		<member name="M:_@CARMODTYPE" syntax="_@CARMODTYPE()">
+			<tagname value="t_CARMODTYPE"/>
+			<stacksize value="1"/>
+			<dependency name="__CARMODTYPE"/>
+		</member>
+		<member name="M:_@CLICK_SOURCE" syntax="_@CLICK_SOURCE()">
+			<tagname value="t_CLICK_SOURCE"/>
+			<stacksize value="1"/>
+			<dependency name="__CLICK_SOURCE"/>
+		</member>
+		<member name="M:_@CONNECTION_STATUS" syntax="_@CONNECTION_STATUS()">
+			<tagname value="t_CONNECTION_STATUS"/>
+			<stacksize value="1"/>
+			<dependency name="__CONNSTAT"/>
+		</member>
+		<member name="M:_@CP_TYPE" syntax="_@CP_TYPE()">
+			<tagname value="t_CP_TYPE"/>
+			<stacksize value="1"/>
+			<dependency name="__CP_TYPE"/>
+		</member>
+		<member name="M:_@DIALOG_STYLE" syntax="_@DIALOG_STYLE()">
+			<tagname value="t_DIALOG_STYLE"/>
+			<stacksize value="1"/>
+			<dependency name="__DIALOG_STYLE"/>
+		</member>
+		<member name="M:_@DOWNLOAD_REQUEST" syntax="_@DOWNLOAD_REQUEST()">
+			<tagname value="t_DOWNLOAD_REQUEST"/>
+			<stacksize value="1"/>
+			<dependency name="__DOWNLOAD_REQUEST"/>
+		</member>
+		<member name="M:_@EDIT_RESPONSE" syntax="_@EDIT_RESPONSE()">
+			<tagname value="t_EDIT_RESPONSE"/>
+			<stacksize value="1"/>
+			<dependency name="__EDIT_RESPONSE"/>
+		</member>
+		<member name="M:_@FIGHT_STYLE" syntax="_@FIGHT_STYLE()">
+			<tagname value="t_FIGHT_STYLE"/>
+			<stacksize value="1"/>
+			<dependency name="__FIGHT_STYLE"/>
+		</member>
+		<member name="M:_@FORCE_SYNC" syntax="_@FORCE_SYNC()">
+			<tagname value="t_FORCE_SYNC"/>
+			<stacksize value="1"/>
+			<dependency name="__FORCE_SYNC"/>
+		</member>
+		<member name="M:_@HTTP_ERROR" syntax="_@HTTP_ERROR()">
+			<tagname value="t_HTTP_ERROR"/>
+			<stacksize value="1"/>
+			<dependency name="__HTTP_ERROR"/>
+		</member>
+		<member name="M:_@HTTP_METHOD" syntax="_@HTTP_METHOD()">
+			<tagname value="t_HTTP_METHOD"/>
+			<stacksize value="1"/>
+			<dependency name="__HTTP_METHOD"/>
+		</member>
+		<member name="M:_@KEY" syntax="_@KEY()">
+			<tagname value="t_KEY"/>
+			<stacksize value="1"/>
+			<dependency name="__KEY"/>
+		</member>
+		<member name="M:_@MAPICON" syntax="_@MAPICON()">
+			<tagname value="t_MAPICON"/>
+			<stacksize value="1"/>
+			<dependency name="__MAPICON"/>
+		</member>
+		<member name="M:_@OBJECT_MATERIAL_SIZE" syntax="_@OBJECT_MATERIAL_SIZE()">
+			<tagname value="t_OBJECT_MATERIAL_SIZE"/>
+			<stacksize value="1"/>
+			<dependency name="__OBJECT_MATERIAL_SIZE"/>
+		</member>
+		<member name="M:_@OBJECT_MATERIAL_TEXT_ALIGN" syntax="_@OBJECT_MATERIAL_TEXT_ALIGN()">
+			<tagname value="t_OBJECT_MATERIAL_TEXT_ALIGN"/>
+			<stacksize value="1"/>
+			<dependency name="__OBJECT_MATERIAL_TEXT_ALIGN"/>
+		</member>
+		<member name="M:_@PLAYER_MARKERS_MODE" syntax="_@PLAYER_MARKERS_MODE()">
+			<tagname value="t_PLAYER_MARKERS_MODE"/>
+			<stacksize value="1"/>
+			<dependency name="__PLAYER_MARKERS_MODE"/>
+		</member>
+		<member name="M:_@PLAYER_RECORDING_TYPE" syntax="_@PLAYER_RECORDING_TYPE()">
+			<tagname value="t_PLAYER_RECORDING_TYPE"/>
+			<stacksize value="1"/>
+			<dependency name="__PLAYER_RECORDING_TYPE"/>
+		</member>
+		<member name="M:_@PLAYER_STATE" syntax="_@PLAYER_STATE()">
+			<tagname value="t_PLAYER_STATE"/>
+			<stacksize value="1"/>
+			<dependency name="__PLAYER_STATE"/>
+		</member>
+		<member name="M:_@SELECT_OBJECT" syntax="_@SELECT_OBJECT()">
+			<tagname value="t_SELECT_OBJECT"/>
+			<stacksize value="1"/>
+			<dependency name="__SELECT_OBJECT"/>
+		</member>
+		<member name="M:_@SPECIAL_ACTION" syntax="_@SPECIAL_ACTION()">
+			<tagname value="t_SPECIAL_ACTION"/>
+			<stacksize value="1"/>
+			<dependency name="__SPECIAL_ACTION"/>
+		</member>
+		<member name="M:_@SPECTATE_MODE" syntax="_@SPECTATE_MODE()">
+			<tagname value="t_SPECTATE_MODE"/>
+			<stacksize value="1"/>
+			<dependency name="__SPECTATE_MODE"/>
+		</member>
+		<member name="M:_@SQLITE_OPEN" syntax="_@SQLITE_OPEN()">
+			<tagname value="SQLITE_OPEN"/>
+			<stacksize value="1"/>
+			<dependency name="__SQLITE_OPEN"/>
+		</member>
+		<member name="M:_@TEXT_DRAW_ALIGN" syntax="_@TEXT_DRAW_ALIGN()">
+			<tagname value="t_TEXT_DRAW_ALIGN"/>
+			<stacksize value="1"/>
+			<dependency name="__TEXT_DRAW_ALIGN"/>
+		</member>
+		<member name="M:_@TEXT_DRAW_FONT" syntax="_@TEXT_DRAW_FONT()">
+			<tagname value="t_TEXT_DRAW_FONT"/>
+			<stacksize value="1"/>
+			<dependency name="__TEXT_DRAW_FONT"/>
+		</member>
+		<member name="M:_@VARTYPE" syntax="_@VARTYPE()">
+			<tagname value="t_VARTYPE"/>
+			<stacksize value="1"/>
+			<dependency name="__VARTYPE"/>
+		</member>
+		<member name="M:_@VEHICLE_DOOR_STATUS" syntax="_@VEHICLE_DOOR_STATUS()">
+			<tagname value="t_VEHICLE_DOOR_STATUS"/>
+			<stacksize value="1"/>
+			<dependency name="__VEHICLE_DOOR_STATUS"/>
+		</member>
+		<member name="M:_@VEHICLE_LIGHT_STATUS" syntax="_@VEHICLE_LIGHT_STATUS()">
+			<tagname value="t_VEHICLE_LIGHT_STATUS"/>
+			<stacksize value="1"/>
+			<dependency name="__VEHICLE_LIGHT_STATUS"/>
+		</member>
+		<member name="M:_@VEHICLE_MODEL_INFO" syntax="_@VEHICLE_MODEL_INFO()">
+			<tagname value="t_VEHICLE_MODEL_INFO"/>
+			<stacksize value="1"/>
+			<dependency name="__VEHICLE_MODEL_INFO"/>
+		</member>
+		<member name="M:_@VEHICLE_PANEL_STATUS" syntax="_@VEHICLE_PANEL_STATUS()">
+			<tagname value="t_VEHICLE_PANEL_STATUS"/>
+			<stacksize value="1"/>
+			<dependency name="__VEHICLE_PANEL_STATUS"/>
+		</member>
+		<member name="M:_@VEHICLE_TYRE_STATUS" syntax="_@VEHICLE_TYRE_STATUS()">
+			<tagname value="t_VEHICLE_TYRE_STATUS"/>
+			<stacksize value="1"/>
+			<dependency name="__VEHICLE_TYRE_STATUS"/>
+		</member>
+		<member name="M:_@WEAPON" syntax="_@WEAPON()">
+			<tagname value="t_WEAPON"/>
+			<stacksize value="1"/>
+			<dependency name="__WEAPON"/>
+		</member>
+		<member name="M:_@WEAPONSKILL" syntax="_@WEAPONSKILL()">
+			<tagname value="t_WEAPONSKILL"/>
+			<stacksize value="1"/>
+			<dependency name="__WEAPONSKILL"/>
+		</member>
+		<member name="M:_@WEAPONSTATE" syntax="_@WEAPONSTATE()">
+			<tagname value="t_WEAPONSTATE"/>
+			<stacksize value="1"/>
+			<dependency name="__WEAPONSTATE"/>
+		</member>
+		<member name="M:_@WEAPON_SLOT" syntax="_@WEAPON_SLOT()">
+			<tagname value="t_WEAPON_SLOT"/>
+			<stacksize value="1"/>
+			<dependency name="__WEAPON_SLOT"/>
+		</member>
+		<member name="M:_@anglemode" syntax="_@anglemode()">
+			<tagname value="anglemode"/>
+			<stacksize value="1"/>
+			<dependency name="anglemode"/>
+		</member>
+		<member name="M:_@filemode" syntax="_@filemode()">
+			<tagname value="filemode"/>
+			<stacksize value="1"/>
+			<dependency name="filemode"/>
+		</member>
+		<member name="M:_@floatround_method" syntax="_@floatround_method()">
+			<tagname value="floatround_method"/>
+			<stacksize value="1"/>
+			<dependency name="floatround_method"/>
+		</member>
+		<member name="M:_@seek_whence" syntax="_@seek_whence()">
+			<tagname value="seek_whence"/>
+			<stacksize value="1"/>
+			<dependency name="seek_whence"/>
+		</member>
+		<member name="M:__IsObjectNoCameraCol" syntax="__IsObjectNoCameraCol(objectid)">
+			<tagname value="bool"/>
+			<attribute name="native"/>
+			<referrer name="HasObjectCameraCollision"/>
+			<referrer name="HasPlayerObjectCameraCollision"/>
+			<param name="objectid">
+			</param>
+		</member>
+		<member name="M:__killtimer" syntax="__killtimer(id)">
+			<attribute name="native"/>
+			<referrer name="settimer"/>
+			<param name="id">
+			</param>
+			<library>time</library> 
+		</member>
+		<member name="M:__print" syntax="__print(string[])">
+			<attribute name="native"/>
+			<referrer name="print"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<library>console</library> 
+		</member>
+		<member name="M:__settimer" syntax="__settimer(callback[], milliseconds, multishot)">
+			<attribute name="native"/>
+			<referrer name="settimer"/>
+			<param name="callback">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="milliseconds">
+			</param>
+			<param name="multishot">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<library>time</library> 
+		</member>
+		<member name="M:cef_emit_event" syntax="cef_emit_event(player_id, event[], ...)">
+			<attribute name="native"/>
+			<referrer name="CefEmitEvent"/>
+			<param name="player_id">
+			</param>
+			<param name="event">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="...">
+				<paraminfo> {CEF_Value,Float,_} </paraminfo>
+			</param>
+		</member>
+		<member name="M:cef_on_player_connect" syntax="cef_on_player_connect(player_id, ip[])">
+			<attribute name="native"/>
+			<referrer name="OnPlayerConnect"/>
+			<param name="player_id">
+			</param>
+			<param name="ip">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:cef_on_player_disconnect" syntax="cef_on_player_disconnect(player_id)">
+			<attribute name="native"/>
+			<referrer name="OnPlayerDisconnect"/>
+			<param name="player_id">
+			</param>
+		</member>
+		<member name="M:clreol" syntax="clreol()">
+			<stacksize value="1"/>
+			<library>console</library>  <summary>Clear the rest of the line.</summary>  <seealso name="clrscr"/>  <return>This function always returns 0.</return>  <remarks>Clears the line at which the cursor is, from the position of the cursor to the right  margin of the console.  This function does not move the cursor.</remarks> 
+		</member>
+		<member name="M:clrscr" syntax="clrscr()">
+			<stacksize value="1"/>
+			<library>console</library>  <summary>Clear the screen.</summary>  <seealso name="clreol"/>  <return>This function always returns 0.</return>  <remarks>Clears the display and moves the cursor to the upper left corner.</remarks> 
+		</member>
+		<member name="M:cvttimestamp" syntax="cvttimestamp(seconds1970, &amp;year, &amp;month, &amp;day, &amp;hour, &amp;minute, &amp;second)">
+			<stacksize value="3"/>
+			<referrer name="settimestamp"/>
+			<param name="seconds1970">
+			</param>
+			<param name="year">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the year upon return.
+			</param>
+			<param name="month">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the month (1-12) upon return.
+			</param>
+			<param name="day">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the day of (1-31) the month upon return.
+			</param>
+			<param name="hour">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the hour (0-23) upon return.
+			</param>
+			<param name="minute">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the minute (0-59) upon return.
+			</param>
+			<param name="second">
+				<paraminfo> &amp; </paraminfo>
+				This will hold the second (0-59) upon return.
+			</param>
+			<library>time</library>  <summary>Convert a time-stamp into a date and time.</summary>              <remarks>  Some file and system functions return time-stamps as the number of seconds since midnight, 1  January 1970, which is the start of the UNIX system epoch.  This function allows to convert these  time stamps into date and time fields.  <c>cvttimestamp</c> = <em>ConVerT TIMESTAMP</em>.  </remarks>  <returns>This function always returns 0.</returns> 
+		</member>
+		<member name="M:delay" syntax="delay(milliseconds)">
+			<stacksize value="5"/>
+			<dependency name="tickcount"/>
+			<param name="milliseconds">
+				The delay, in milliseconds.
+			</param>
+			<library>time</library>  <summary>Halts execution a number of milliseconds.</summary>    <remarks>  On some platforms, the <c>sleep</c> instruction also delays for a given number of milliseconds.  The difference between the <c>sleep</c> instruction and the <c>delay</c> function is that the  <c>delay</c> function does not yield events and the <c>sleep</c> instruction typically yields.  When yielding events, any pending events are handled.  As a result, the <c>delay</c> function  waits without handling any pending events and the <c>sleep</c> instruction waits and deals with  events.  </remarks>  <returns>This function always returns 0.</returns> 
+		</member>
+		<member name="M:diskfree" syntax="diskfree(volume[])">
+			<stacksize value="1"/>
+			<param name="volume">
+				<paraminfo> [] </paraminfo>
+				The name of the volume on systems that support multiple disks or multiple memory  cards.  On single-volume systems, it is optional.
+			</param>
+			<library>file</library>  <summary>Returns the free disk space.</summary>    <remarks>  The maximum size that can be supported 2048 GiB (2 terabyte).  </remarks>  <returns>The amount of free space in KiB.</returns> 
+		</member>
+		<member name="M:fflush" syntax="fflush(handle)">
+			<tagname value="bool"/>
+			<stacksize value="3"/>
+			<dependency name="false"/>
+			<dependency name="flength"/>
+			<dependency name="true"/>
+			<param name="handle">
+				<paraminfo>File </paraminfo>
+				The file handle returned by <a href="#fopen">fopen</a> or <a href="#ftemp">ftemp</a>
+			</param>
+			<library>file</library>  <summary>Flush a file to disk (ensure all writes are complete).</summary>    <remarks>Actually just calls <c>flength</c> as that has to force a flush to be accurate.</remarks> 
+		</member>
+		<member name="M:flength" syntax="flength(handle)">
+			<attribute name="native"/>
+			<referrer name="fflush"/>
+			<param name="handle">
+				<paraminfo>File </paraminfo>
+				The file handle returned by <a href="#fopen">fopen</a> or <a href="#ftemp">ftemp</a>
+			</param>
+			<library>file</library>  <summary>Returns the length of a file.</summary>    <remarks>Using an <b>invalid handle</b> will crash your server! Get a <b>valid handle</b> by using  <a href="#fopen">fopen</a> or <a href="#ftemp">ftemp</a>.</remarks>  <returns>The length of a file, in bytes.</returns> 
+		</member>
+		<member name="M:float" syntax="float(value)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator*(Float:,_:)"/>
+			<referrer name="operator/(Float:,_:)"/>
+			<referrer name="operator/(_:,Float:)"/>
+			<referrer name="operator+(Float:,_:)"/>
+			<referrer name="operator-(Float:,_:)"/>
+			<referrer name="operator-(_:,Float:)"/>
+			<referrer name="operator==(Float:,_:)"/>
+			<referrer name="operator!=(Float:,_:)"/>
+			<referrer name="operator&gt;(Float:,_:)"/>
+			<referrer name="operator&gt;(_:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,_:)"/>
+			<referrer name="operator&gt;=(_:,Float:)"/>
+			<referrer name="operator&lt;(Float:,_:)"/>
+			<referrer name="operator&lt;(_:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,_:)"/>
+			<referrer name="operator&lt;=(_:,Float:)"/>
+			<param name="value">
+				Integer value to convert to a float
+			</param>
+			<library>float</library>  <summary>Converts an integer into a float.</summary>    <seealso name="floatround"/>  <seealso name="floatstr"/>  <returns>The given integer as a float.</returns> 
+		</member>
+		<member name="M:floatadd" syntax="floatadd(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator+(Float:,_:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+				First float
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+				Second float
+			</param>
+			<library>float</library>  <summary>Adds two floats together.  This function is redundant as the standard operator (+) does  the same thing.</summary>      <seealso name="floatsub"/>  <seealso name="floatmul"/>  <seealso name="floatdiv"/>  <returns>The sum of the two given floats.</returns> 
+		</member>
+		<member name="M:floatcmp" syntax="floatcmp(oper1, oper2)">
+			<attribute name="native"/>
+			<referrer name="operator==(Float:,Float:)"/>
+			<referrer name="operator==(Float:,_:)"/>
+			<referrer name="operator!=(Float:,Float:)"/>
+			<referrer name="operator!=(Float:,_:)"/>
+			<referrer name="operator&gt;(Float:,Float:)"/>
+			<referrer name="operator&gt;(Float:,_:)"/>
+			<referrer name="operator&gt;(_:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,_:)"/>
+			<referrer name="operator&gt;=(_:,Float:)"/>
+			<referrer name="operator&lt;(Float:,Float:)"/>
+			<referrer name="operator&lt;(Float:,_:)"/>
+			<referrer name="operator&lt;(_:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,_:)"/>
+			<referrer name="operator&lt;=(_:,Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+				The first float value to compare
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+				The second float value to compare
+			</param>
+			<library>float</library>  <summary>floatcmp can be used to compare float values to each other, to validate the comparison.</summary>      <returns><b><c>0</c></b> if value does match, <b><c>1</c></b> if the first value is bigger and <b><c>-1</c></b>  if the 2nd value is bigger.</returns> 
+		</member>
+		<member name="M:floatdiv" syntax="floatdiv(dividend, divisor)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator/(Float:,_:)"/>
+			<referrer name="operator/(_:,Float:)"/>
+			<param name="dividend">
+				<paraminfo>Float </paraminfo>
+				First float
+			</param>
+			<param name="divisor">
+				<paraminfo>Float </paraminfo>
+				Second float (dividates the first float.)
+			</param>
+			<library>float</library>  <summary>Divide one float by another one.  Redundant as the division operator (/) does the same thing.</summary>      <seealso name="floatadd"/>  <seealso name="floatsub"/>  <seealso name="floatmul"/>  <returns>The quotient of the two given floats.</returns> 
+		</member>
+		<member name="M:floatmul" syntax="floatmul(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator*(Float:,_:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+				First Float
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+				Second Float, the first one gets multiplied with
+			</param>
+			<library>float</library>  <summary>Multiplies two floats with each other.</summary>      <seealso name="floatadd"/>  <seealso name="floatsub"/>  <seealso name="floatdiv"/>  <returns>The product of the two given floats.</returns> 
+		</member>
+		<member name="M:floatsub" syntax="floatsub(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator-(Float:,_:)"/>
+			<referrer name="operator-(_:,Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+				First Float
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+				Second Float (gets subtracted from the first float.)
+			</param>
+			<library>float</library>  <summary>Subtracts one float from another one.  Note that this function has no real use, as one can  simply use the standard operator (-) instead.</summary>      <seealso name="floatadd"/>  <seealso name="floatmul"/>  <seealso name="floatdiv"/>  <returns>The difference of the two given floats.</returns> 
+		</member>
+		<member name="M:getchar" syntax="getchar(echo)">
+			<stacksize value="1"/>
+			<param name="echo">
+				<paraminfo>bool </paraminfo>
+				If <c>true</c>, the character read from the keyboard is echoed on the display.
+			</param>
+			<library>console</library>  <summary>Read one character.</summary>    <seealso name="getstring"/>  <return>The numeric code for the character that is read (this is usually the ASCII code).</return> 
+		</member>
+		<member name="M:getstring" syntax="getstring(string[], size, pack)">
+			<stacksize value="1"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+				
+			</param>
+			<param name="size">
+				
+			</param>
+			<param name="pack">
+				<paraminfo>bool </paraminfo>
+				
+			</param>
+			<library>console</library>  <summary>Read a line.</summary>        <seealso name="getchar"/>  <return>The number of characters read, excluding the terminating null character.</return>  <remarks>Function <c>getstring</c> stops reading when either the enter key is typed or the  maximum length is reached.  The maximum length is in cells (not characters) and it includes a   terminating null character.  The function can read both packed and unpacked strings; when reading  a packed string, the function may read more characters than the size parameter specifies, since  each cell holds multiple characters.</remarks> 
+		</member>
+		<member name="M:getvalue" syntax="getvalue(base, end, ...)">
+			<stacksize value="1"/>
+			<param name="base">
+				Must be between 2 and 36, use 10 for decimal or 16 for hexadecimal.
+			</param>
+			<param name="end">
+				The character code that terminates the input.  More than one character may be listed.
+			</param>
+			<param name="...">
+			</param>
+			<library>console</library>  <summary>Read a number.</summary>      <param name="..."></param>  <seealso name="getstring"/>  <return>The value that is read.</return>  <remarks>Read a value (a signed number) from the keyboard.  The <c>getvalue</c> function allows  you to read in a numeric radix from 2 to 36 (the base parameter) with decimal radix by default.  By default the input ends when the user types the enter key, but one or more different keys may  be selected (the end parameter and subsequent). In the list of terminating keys, a positive  number (like <c>'\r'</c>) displays the key and terminates input, and a negative number terminates  input without displaying the terminating key.</remarks> 
+		</member>
+		<member name="M:gotoxy" syntax="gotoxy(x, y)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<param name="x">
+				
+			</param>
+			<param name="y">
+				The new cursor position.
+			</param>
+			<library>console</library>  <summary>Set cursor location.</summary>      <seealso name="clrscr"/>  <return><c>true</c> if the cursor moved and <c>false</c> if the requested position is invalid.</return>  <remarks>Sets the cursor position on the console.  The upper left corner is at <c>(1,1)</c>.</remarks> 
+		</member>
+		<member name="M:main" syntax="main()">
+			<attribute name="entry"/>
+			<stacksize value="1"/>
+		</member>
+		<member name="M:print" syntax="print(string[], foreground, background)">
+			<stacksize value="3"/>
+			<dependency name="__print"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+				The string to print
+			</param>
+			<param name="foreground">
+				The string to print
+			</param>
+			<param name="background">
+				Colour codes for the foreground and the background of the text string;  see function <c>setattr</c> for a list of colours.  When left at <c>-1</c>, the default colours  are used.  Note that a terminal or a host application may not support colours.
+			</param>
+			<library>console</library>  <summary>Prints a string to the server console (not in-game chat) and logs (server_log.txt).</summary>        <seealso name="printf"/>  <return>This function always returns 0.</return> 
+		</member>
+		<member name="M:setattr" syntax="setattr(foreground, background)">
+			<stacksize value="1"/>
+			<param name="foreground">
+				The string to print
+			</param>
+			<param name="background">
+				Colour codes for the foreground and the background of the text string;  see function <c>setattr</c> for a list of colours.  When left at <c>-1</c>, the default colours  are used.  Note that a terminal or a host application may not support colours
+			</param>
+			<library>console</library>  <summary>Set text colours.</summary>      <seealso name="clrscr"/>  <return>This function always returns 0.</return>  <remarks>On most systems, the colour value must be a value between zero and seven, as per the  ANSI escape sequences, ISO 6429.  Predefined constants for the colours are <c>black (0)</c>,  <c>red (1)</c>, <c>green (2)</c>, <c>yellow (3)</c>, <c>blue (4)</c>, <c>magenta (5)</c>,  <c>cyan (6)</c>, and <c>white (7)</c>.</remarks> 
+		</member>
+		<member name="M:setdate" syntax="setdate(year, month, day)">
+			<stacksize value="1"/>
+			<referrer name="settimestamp"/>
+			<param name="year">
+				The year to set; if set to <c>"cellmin"</c>, the default value, it is ignored.
+			</param>
+			<param name="month">
+				The month to set; if set to <c>"cellmin"</c>, the default value, it is ignored.
+			</param>
+			<param name="day">
+				The day to set; if set to <c>"cellmin"</c>, the default value, it is ignored.
+			</param>
+			<library>time</library>  <summary>Set the system date.</summary>        <returns>This function always returns 0.</returns>  <remarks>The date fields are kept in a valid range.  For example, when setting the month to 13,  it wraps back to 1 - this is always wrapped to the min/max, not modulo.</remarks> 
+		</member>
+		<member name="M:settime" syntax="settime(hour, minute, second)">
+			<stacksize value="1"/>
+			<referrer name="settimestamp"/>
+			<param name="hour">
+				The hour to set, in the range 0-23; if set to <c>"cellmin"</c>, the default value,  it is ignored.
+			</param>
+			<param name="minute">
+				The minute to set, in the range 0-59; if set to <c>"cellmin"</c>, the default value,  it is ignored.
+			</param>
+			<param name="second">
+				The second to set, in the range 0-59; if set to <c>"cellmin"</c>, the default value,  it is ignored.
+			</param>
+			<library>time</library>  <summary>Set the system time.</summary>        <returns>This function always returns 0.</returns>  <remarks>The time fields are kept in a valid range.  For example, when setting the hour to 24, it  wraps back to 0 - this is always wrapped to the min/max, not modulo.</remarks> 
+		</member>
+		<member name="M:settimer" syntax="settimer(milliseconds, singleshot)">
+			<stacksize value="5"/>
+			<dependency name="__killtimer"/>
+			<dependency name="__settimer"/>
+			<param name="milliseconds">
+				The number of milliseconds to wait before calling the <c>@timer</c>  callback function.  If the timer is repetitive, this is the interval.  When this parameter is 0  (zero), the timer is shut off.
+			</param>
+			<param name="singleshot">
+				<paraminfo>bool </paraminfo>
+				If <c>false</c>, the timer is a repetitive timer; if <c>true</c> the  timer is shut off after invoking the <c>@timer</c> event once.
+			</param>
+			<library>time</library>  <summary>Configure the event timer.</summary>      <remarks>  See the chapter "Usage" for an example of this function, and the <c>@timer</c> event function.  </remarks>  <returns>This function always returns 0.</returns> 
+		</member>
+		<member name="M:settimestamp" syntax="settimestamp(seconds1970)">
+			<stacksize value="16"/>
+			<dependency name="cvttimestamp"/>
+			<dependency name="setdate"/>
+			<dependency name="settime"/>
+			<param name="seconds1970">
+				The number of seconds that have elapsed since 00:00 hours, 1 January  1970.  This particular date, 1 January 1970, is the <em>UNIX system epoch</em>.
+			</param>
+			<library>time</library>  <summary>Sets the date and time with a single value.</summary>    <returns>This function always returns 0.</returns>  <remarks>The function <c>getdate</c> returns the number of seconds since 1 January 1970.</remarks> 
+		</member>
+		<member name="M:strcat" syntax="strcat(dest[], source[], maxlength)">
+			<attribute name="native"/>
+			<referrer name="strcopy"/>
+			<param name="dest">
+				<paraminfo> [] </paraminfo>
+				The string to store the two concatenated strings in
+			</param>
+			<param name="source">
+				<paraminfo> [] </paraminfo>
+				The source string
+			</param>
+			<param name="maxlength">
+				The maximum length of the destination (optional=<b><c>sizeof (dest)</c></b>)
+			</param>
+			<library>string</library>  <summary>This function concatenates (joins together) two strings into the destination string.</summary>        <seealso name="strcmp"/>  <seealso name="strfind"/>  <seealso name="strtok"/>  <seealso name="strdel"/>  <seealso name="strins"/>  <seealso name="strlen"/>  <seealso name="strmid"/>  <seealso name="strpack"/>  <seealso name="strval"/>  <returns>The length of the new destination string.</returns> 
+		</member>
+		<member name="M:strcmp" syntax="strcmp(string1[], string2[], ignorecase, length)">
+			<attribute name="native"/>
+			<referrer name="strequal"/>
+			<param name="string1">
+				<paraminfo> [] </paraminfo>
+				The first string to compare
+			</param>
+			<param name="string2">
+				<paraminfo> [] </paraminfo>
+				The second string to compare
+			</param>
+			<param name="ignorecase">
+				<paraminfo>bool </paraminfo>
+				When set to true, the case doesn't matter - HeLLo is the same as Hello.  When false, they're not the same (optional=<b><c>0</c></b>)
+			</param>
+			<param name="length">
+				When this length is set, the first x chars will be compared - doing "Hello"  and "Hell No" with a length of 4 will say it's the same string (optional=<b><c>cellmax</c></b>)
+			</param>
+			<library>string</library>  <summary>Compares two strings to see if they are the same.</summary>          <seealso name="strfind"/>  <seealso name="strtok"/>  <seealso name="strdel"/>  <seealso name="strins"/>  <seealso name="strlen"/>  <seealso name="strmid"/>  <seealso name="strpack"/>  <seealso name="strval"/>  <seealso name="strcat"/>  <seealso name="strequal"/>  <remarks>This function returns <b><c>0</c></b> if either string is empty.  Check for null strings  with <c>isnull()</c>.  If you do not, for example, people can login to anyone's account by simply  entering a blank password. </remarks>  <remarks>  <code>  #if !defined isnull<p/>  &#9;#define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') &amp;&amp; (!(%1[1]))))<p/>  #endif  </code>  </remarks>  <remarks>If you compare strings from a text file, you should take in to account the 'carriage return'  and 'new line' special characters (\r \n), as they are included, when using fread.</remarks>  <returns>  <b><c>0</c></b> if strings match each other on given length;.<p/>  <b><c>1</c></b> or <b><c>-1</c></b> if some character do not match: <c>string1[i] - string2[i]</c>.<p/>  <b>difference in number of characters</b> if one string matches only part of another string.  </returns> 
+		</member>
+		<member name="M:strcopy" syntax="strcopy(dest[], source[], maxlength)">
+			<stacksize value="5"/>
+			<dependency name="EOS"/>
+			<dependency name="strcat"/>
+			<param name="dest">
+				<paraminfo> [] </paraminfo>
+				The string to copy the source string into
+			</param>
+			<param name="source">
+				<paraminfo> [] </paraminfo>
+				The source string
+			</param>
+			<param name="maxlength">
+				The maximum length of the destination (optional=<b><c>sizeof (dest)</c></b>)
+			</param>
+			<library>string</library>  <summary>Copies a string into the destination string.</summary>        <seealso name="strcat"/>  <returns>The length of the new destination string.</returns> 
+		</member>
+		<member name="M:strequal" syntax="strequal(string1[], string2[], ignorecase, length)">
+			<tagname value="bool"/>
+			<stacksize value="6"/>
+			<dependency name="false"/>
+			<dependency name="strcmp"/>
+			<param name="string1">
+				<paraminfo> [] </paraminfo>
+				The first string to compare
+			</param>
+			<param name="string2">
+				<paraminfo> [] </paraminfo>
+				The second string to compare
+			</param>
+			<param name="ignorecase">
+				<paraminfo>bool </paraminfo>
+				When set to true, the case doesn't matter - HeLLo is the same as Hello.  When false, they're not the same (optional=<b><c>0</c></b>)
+			</param>
+			<param name="length">
+				When this length is set, the first x chars will be compared - doing "Hello"  and "Hell No" with a length of 4 will say it's the same string (optional=<b><c>cellmax</c></b>)
+			</param>
+			<library>string</library>  <summary>Compares two strings to see if they are the same.</summary>          <seealso name="strcmp"/>  <remarks>This is a conveniece function that depends on <a href="#strcmp">strcmp</a>.</remarks>  <returns><b><c>true</c></b> if the strings match each other on given length, <b><c>false</c></b>  otherwise.</returns> 
+		</member>
+		<member name="M:tickcount" syntax="tickcount(&amp;granularity)">
+			<attribute name="native"/>
+			<referrer name="delay"/>
+			<param name="granularity">
+				<paraminfo> &amp; </paraminfo>
+				Upon return, this value contains the number of ticks that the internal  system time will tick per second.  This value therefore indicates the accuracy of the return value  of this function (optional=<b><c>0</c></b>)
+			</param>
+			<library>time</library>  <summary>This function can be used as a replacement for <a href="#GetTickCount">GetTickCount</a>,  as it returns the number of milliseconds since the start-up of the server.</summary>    <returns>The number of milliseconds since start-up of the system.  For a 32-bit cell, this count  overflows after approximately 24 days of continuous operation.</returns> 
+		</member>
+
+	</members>
+</doc>
