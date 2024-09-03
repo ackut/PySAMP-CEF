@@ -19,3 +19,4 @@ This project is a wrapper for the “samp-cef” plugin that embeds CEF into SA:
 > 3. Most likely the Browser class is implemented unsuccessfully.
 
 ### Special thanks: [Cheaterman](https://github.com/Cheaterman), [Ykpauneu](https://github.com/Ykpauneu), [PySAMP Community](https://discord.gg/RmMwgGpGUb)
+and [Pycckue-Bnepeg](https://github.com/Pycckue-Bnepeg) for the [samp-cef](https://github.com/Pycckue-Bnepeg/samp-cef) plugin.
