@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PySAMP-CEF</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..500&display=swap');
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body, html {
+                width: 100%;
+                height: 100%;
+                user-select: none;
+            }
+
+            .inter-normal {
+                font-family: "Inter", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+
+            .container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                width: 300px;
+                height: fit-content;
+                padding: 25px 30px;
+                border-radius: 14px;
+                background-color: hsla(0, 0%, 0%, 0.8);
+            }
+
+            .wrapper {
+                width: 100%;
+                text-align: center;
+            }
+
+            .title {
+                display: block;
+                width: 100%;
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .text {
+                display: block;
+                width: 100%;
+                color: hsla(0, 0%, 100%, 0.8);
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+
+            .button {
+                display: block;
+                width: 100%;
+                height: fit-content;
+                padding: 12px 36px;
+                border-radius: 8px;
+                border: 1px solid hsla(0, 0%, 100%, 0.05);
+                color: white;
+                font-size: 14px;
+                background-color: hsla(0, 0%, 100%, 0.1);
+                transition: background-color .1s;
+                cursor: pointer;
+                margin-top: 25px;
+            }
+
+            .button:hover {
+                background-color: hsla(0, 0%, 100%, 0.2);
+            }
+        </style>
+        <script src="jquery-3.7.1.slim.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="title inter-normal">PySAMP-CEF Test</div>
+                    <div class="text inter-normal" id="text">Click the button to send a request to the server and receive a response</div>
+                    <div class="button inter-normal" id="button">Ping server</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function cefEmit(event, ...args) {
+                cef.emit(event, JSON.stringify(args));
+            }
+            $(() => {
+                const text = $('#text');
+                const button = $('#button');
+
+                button.on('click', () => {
+                    button.text('Waiting...');
+                    cefEmit('in:server:callback:name', 'Argument One', 2)
+                });
+
+                cef.on('in:cef:event:name', (...args) => {
+                    console.log(JSON.parse(args));
+                    button.text('Ping server');
+                    text.text(args);
+                });
+            });
+        </script>
+    </body>
+</html>
