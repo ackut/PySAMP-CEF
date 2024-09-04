@@ -47,24 +47,12 @@ def cef_hide_browser(
         hide
     )
 
-# --------------------------------------------------------
-# --- Thank you, Cheaterman.
-# --- I'm still hoping to come up with something better.
-# --------------------------------------------------------
-def to_cef_type(value):
-    for type_value, type_ref in enumerate([str, int, float]):
-        if isinstance(value, type_ref):
-            return type_value
 
-
-def cef_emit_event(player_id: int, event_name: str, args: tuple):
+def cef_emit_event(player_id: int, event_name: str, *args):
     cef_args = []
 
     for arg in args:
-        cef_type = to_cef_type(arg)
-        if cef_type is None:
-            raise ValueError(f'Invalid CEF type: {type(arg).__name__}')
-        cef_args.extend([cef_type, arg])
+        cef_args.extend([0, json.dumps(arg)])
 
     return call_native_function(
         'cef_emit_event',
@@ -72,7 +60,6 @@ def cef_emit_event(player_id: int, event_name: str, args: tuple):
         event_name,
         tuple(cef_args)
     )
-# --------------------------------------------------------
 
 
 def cef_subscribe(
@@ -257,7 +244,7 @@ class Browser:
         cef_load_url(self.id, self.id, url)
 
     def emit(self, event: str, *args):
-        cef_emit_event(self.id, event, (json.dumps(list(args)),))
+        cef_emit_event(self.id, event, *args)
 
 
 def OnCefInitialize(player_id: int, success: int):
