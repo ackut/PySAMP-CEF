@@ -102,22 +102,25 @@
         </div>
 
         <script>
-            function cefEmit(event, ...args) {
-                cef.emit(event, JSON.stringify(args));
+            // data - TS: Record<any, any> / Python dict.
+            function cefEmit(event, data) {
+                cef.emit(event, JSON.stringify(data));
             }
+            
             $(() => {
                 const text = $('#text');
                 const button = $('#button');
 
                 button.on('click', () => {
                     button.text('Waiting...');
-                    cefEmit('in:server:callback:name', 'Argument One', 2)
+                    cefEmit('cef:test', {'test': [1, 2, 3]})
                 });
 
-                cef.on('in:cef:event:name', (...args) => {
-                    console.log(JSON.parse(args));
+                // data - TS: Record<any, any> / Python dict.
+                cef.on('cef:test', (data) => {
+                    console.log(JSON.parse(data));
                     button.text('Ping server');
-                    text.text(args);
+                    text.text(data);
                 });
             });
         </script>
