@@ -1,4 +1,6 @@
-An attempt to improve the work with CEF. Now Browser works as planned initially. I will be glad to comments / suggestions on improving the current code.  
+An attempt to improve the work with CEF. Now Browser works as planned initially. I will be glad to comments / suggestions on improving the current code.
+
+Example [./server/python/__init\__.py](https://github.com/ackut/PySAMP-CEF/blob/18d3eda4ea8730b4efb18c81a243d7562fbcc91e/server/python/__init__.py)
 
 
 # Key features and limitations.

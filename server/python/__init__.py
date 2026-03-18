@@ -23,7 +23,8 @@ def on_player_connect(player: Player) -> None:
 
 @Player.on_disconnect
 def on_player_disconnect(player: Player, reason: int) -> None:
-    Browser.remove_from_pool(player.id)
+    browser = Browser.from_pool(player.id)
+    browser.destroy()
 
 
 @Browser.on_cef_init
