@@ -24,7 +24,7 @@ Using multiple browsers per player is [not recommended](https://github.com/zottc
 # Plans for hashing event names
 I'm not sure, but it is possible that CEF has a limit on the length of the event name, or long names will create an excessive load.
 
-Therefore, it is worth implementing a hashing mechanism `{"event:name": "b563b034d07", ...`}`, and then a handshake mechanism where the client and server exchange "event cards" when the player connects.
+Therefore, it is worth implementing a hashing mechanism `{"event:name": "b563b034d07", ...`}`, and then a handshake mechanism where the client and server exchange "event maps" when the player connects.
 I don't have enough experience with TypeScript (on the client) to implement this, at least not yet.
 
 # Client wrapper
