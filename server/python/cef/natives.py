@@ -46,16 +46,17 @@ def cef_hide_browser(
     )
 
 
-def cef_emit_event(player_id: int, event_name: str, data: dict):
-    if not isinstance(data, dict):
+def cef_emit_event(player_id: int, event_name: str, data: dict | None = None):
+    if data and not isinstance(data, dict):
         logger.error(f'data must be a dict, not {type(data)}')
         return None
 
+    args = ((0, json.dumps(data)),) if data is not None else ()
     return call_native_function(
         'cef_emit_event',
         player_id,
         event_name,
-        (0, json.dumps(data or {}))
+        *args,
     )
 
 

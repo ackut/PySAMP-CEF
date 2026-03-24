@@ -1,60 +1,21 @@
-import json
-from functools import wraps
-from typing import Callable, Optional
+from typing import Any, Callable
 
-from loguru import logger
-
-from pysamp import register_callback
-from pysamp.event import event
-
-from .natives import *
+from .event_handler import EventHandler
+from .exceptions import BrowserCreationError
+from .natives import (cef_always_listen_keys, cef_create_browser,
+                      cef_destroy_browser, cef_emit_event, cef_focus_browser,
+                      cef_hide_browser, cef_load_url, cef_toggle_dev_tools)
+from .registry import BrowserRegistry
 
 
 class Browser:
-    _pool: dict[int, 'Browser'] = {}  # player_id: Browser
+    """browser_id == player_id"""
 
-    def __init__(self, player_id: int) -> None:
-        self.id: int = player_id
+    def __init__(self, player_id: int):
+        self.id = player_id
         self.url: str | None = None
         self.is_hidden: bool = False
         self.is_focused: bool = False
-
-    @classmethod
-    def is_in_pool(cls, browser_id: int) -> bool:
-        return browser_id in cls._pool
-
-    @classmethod
-    def from_pool(cls, player_id: int) -> Optional['Browser']:
-        return cls._pool.get(player_id)
-
-    @classmethod
-    def remove_from_pool(cls, player_id: int) -> None:
-        if player_id in cls._pool:
-            del cls._pool[player_id]
-
-    @classmethod
-    def with_pool(cls, func: Callable) -> Callable:
-        @wraps(func)
-        def wrapper(browser_id: int, json_string: str):
-            browser = cls.from_pool(browser_id)
-            if not browser:
-                logger.warning(f'[Browser] {browser_id=} not found in pool')
-                return None
-
-            try:
-                data = json.loads(json_string)
-            except json.JSONDecodeError:
-                logger.error(f'[Browser] Invalid JSON: {json_string}')
-                return None
-
-            if not isinstance(data, dict):
-                logger.error(
-                    f'[Browser] Event data is not dict. data={data}, type={type(data)}'
-                )
-                return None
-
-            return func(browser, data)
-        return wrapper
 
     @classmethod
     def create(
@@ -63,10 +24,7 @@ class Browser:
         url: str,
         is_hidden: bool = False,
         is_focused: bool = False,
-    ) -> Optional['Browser']:
-        if cls.is_in_pool(player_id):
-            return None
-
+    ) -> 'Browser':
         result = cef_create_browser(
             player_id=player_id,
             browser_id=player_id,
@@ -75,72 +33,42 @@ class Browser:
             is_focused=is_focused,
         )
 
-        # NOTE: Creating a browser does not mean that the URL has opened.
         if result == 0:
-            logger.error(f'[Browser]: Failed to create for {player_id=}')
-            return None
+            raise BrowserCreationError(
+                f'Failed to create browser for player {player_id}'
+            )
 
         browser = cls(player_id)
         browser.url = url
         browser.is_hidden = is_hidden
         browser.is_focused = is_focused
-
-        cls._pool[player_id] = browser
-
-        logger.debug(f'[Browser] Created for {player_id=}')
+        BrowserRegistry.add(browser)
         return browser
 
     @classmethod
-    def init_cef(cls, player_id: int, player_ip: str) -> None:
-        return cef_on_player_connect(player_id, player_ip)
-
-    @classmethod
     def on(cls, event: str) -> Callable:
-        def decorator(func):
-            register_callback(func.__name__, 'is')
-            cef_subscribe(event, func.__name__)
-
-            logger.debug(
-                f'[Browser] Event "{event}" -> "{func.__name__}"'
-            )
-
-            return cls.with_pool(func)
-        return decorator
+        return EventHandler.subscribe(event)
 
     def destroy(self) -> bool:
-        if not self.is_in_pool(self.id):
-            return False
+        if BrowserRegistry.remove(self):
+            cef_destroy_browser(self.id, self.id)
+            return True
+        return False
 
-        cef_destroy_browser(self.id, self.id)
-        self.remove_from_pool(self.id)
-        return True
+    def emit(self, event_name: str, data: dict | None = None) -> Any:
+        return cef_emit_event(self.id, event_name, data)
 
-    def emit(self, event: str, data: dict | None = None) -> bool:
-        return cef_emit_event(self.id, event, data)
-
-    def set_visibility(self, visible: bool = True) -> bool:
+    def set_visibility(self, visible: bool = True) -> Any:
         return cef_hide_browser(self.id, self.id, not visible)
 
-    def set_focus(self, focus: bool = True) -> bool:
+    def set_focus(self, focus: bool = True) -> Any:
         return cef_focus_browser(self.id, self.id, focus)
 
-    def load_url(self, url: str) -> bool:
+    def load_url(self, url: str) -> Any:
         return cef_load_url(self.id, self.id, url)
 
-    def set_always_listen_keys(self, always: bool = True) -> bool:
-        return cef_always_listen_keys(self.id, self.id, always)
+    def set_always_listen_keys(self, listen: bool = True) -> Any:
+        return cef_always_listen_keys(self.id, self.id, listen)
 
-    def set_dev_tools(self, status: bool) -> bool:
+    def set_dev_tools(self, status: bool) -> Any:
         return cef_toggle_dev_tools(self.id, self.id, status)
-
-    @event('OnCefInitialize')
-    def on_cef_init(cls, player_id: int, success: int):
-        return player_id, bool(success)
-
-    @event('OnCefBrowserCreated')
-    def on_created(cls, player_id: int, browser_id: int, status_code: int) -> None:
-        return cls.from_pool(player_id), status_code
-
-
-register_callback('OnCefInitialize', 'ii')
-register_callback('OnCefBrowserCreated', 'iii')

@@ -3,13 +3,15 @@ import samp  # type: ignore
 from pysamp import on_gamemode_init, set_game_mode_text
 from pysamp.player import Player
 
-from python.cef.browser import Browser
+from python.cef import CEF, Browser, BrowserRegistry
 
 samp.config(encoding='cp1251')
 
 
 @on_gamemode_init
 def on_init():
+    CEF.register_callbacks()
+    
     set_game_mode_text('PySAMP-CEF')
 
 
@@ -18,17 +20,17 @@ def on_player_connect(player: Player) -> None:
     player.toggle_controllable(False)
     player.toggle_spectating(True)
 
-    Browser.init_cef(player.id, player.get_ip())
+    CEF.init(player.id, player.get_ip())
 
 
 @Player.on_disconnect
 def on_player_disconnect(player: Player, reason: int) -> None:
-    browser = Browser.from_pool(player.id)
+    browser = BrowserRegistry.get(player.id)
     browser.destroy()
 
 
-@Browser.on_cef_init
-def on_browser_cef_init(player_id: int, success: bool) -> None:
+@CEF.on_init
+def on_cef_init(player_id: int, success: bool) -> None:
     player = Player(player_id)
 
     if not success:
@@ -43,7 +45,7 @@ def on_browser_cef_init(player_id: int, success: bool) -> None:
     )
 
 
-@Browser.on_created
+@CEF.on_browser_created
 def on_browser_created(browser: Browser, status_code: int) -> None:
     player = Player(browser.id)
 
