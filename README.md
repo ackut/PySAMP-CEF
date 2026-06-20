@@ -18,5 +18,5 @@ This project is a wrapper for the “samp-cef” plugin that embeds CEF into SA:
 > 2. Passing arguments from server to client and back again is done in a questionable way.
 > 3. Most likely the Browser class is implemented unsuccessfully.
 
-### Special thanks: [Cheaterman](https://github.com/Cheaterman), [Ykpauneu](https://github.com/Ykpauneu), [PySAMP Community](https://discord.gg/RmMwgGpGUb)
+### Special thanks: [Cheaterman](https://github.com/Cheaterman), [Dan](https://github.com/gsmj), [PySAMP Community](https://discord.gg/RmMwgGpGUb)
 and [Pycckue-Bnepeg](https://github.com/Pycckue-Bnepeg) for the [samp-cef](https://github.com/Pycckue-Bnepeg/samp-cef) plugin.
